@@ -1,26 +1,31 @@
 /* Primary Colors */
 :root {
-  --primary-color: #fff679;
-  --primary-dark: #f5eb63;
-  --primary-light: #fff99f;
+  --primary-color: hsl(170, 17%, 59%);
+  --secondary-color: hsl(188, 54%, 39%);
+  --tertiary-color: hsl(197, 64%, 34%);
+  --highlight-color: hsl(52, 88%, 75%);
 
-  --secondary-color: #4e95d3;
-  --secondary-dark: #4378a7;
-  --secondary-light: #4e95d3;
+  --black: hsl(217, 71%, 19%);
+  --white: hsl(53, 19%, 91%);
 
-  --red: rgb(224, 70, 70);
-  --purple: rgb(159, 82, 221);
-  --green: rgb(73, 177, 108);
-
-  --black: #303030;
-  --white: #ecebe3;
-  --gray: #ccc;
-
-  --success-color: #28a745;
-  --warning-color: #ffc107;
+  --success-color: #6bd684;
+  --warning-color: #ffd863;
   --error-color: #dc3545;
 
-  --body-bg: var(--primary-color);
-  --text-color: var(--black);
+  --body-bg: var(--black);
+  --text-color: var(--white);
   --nav: var(--white);
+
+  --fs-18: 1.125rem;
+  --fs-24: 1.5rem;
+  --fs-40: 2.5rem; //mobile
+  --fs-48: 3rem; //desktop
+  --fs-72: 4.5rem; //mobile
+  --fs-88: 5.5rem; //desktop
+
+  --container: 69.375rem; // 1110px
 }
+
+$mobile-breakpoint: 768px;
+$tablet-breakpoint: 992px;
+$desktop-breakpoint: 1200px;

@@ -5,111 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Charles Hedrick - Frontend Developer</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- header section -->
-    <header id="home" class="section header py-5">
-      <nav class="navbar">
-        <div class="brand-and-toggler">
-          <a href="index.html" class="navbar-brand">Charles Hedrick</a>
-          <button type="button" class="navbar-toggler" id="navbar-toggler">
-            <i class="bi bi-list"></i>
-          </button>
-        </div>
-        <div class="navbar-collapse">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#skills" class="nav-link">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a href="#portfolio" class="nav-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#process" class="nav-link">Work Process</a>
-            </li>
-            <li class="nav-item">
-              <a href="#testimonials" class="nav-link">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <section class="header-banner">
-        <div class="header-banner-content">
-          <h1 class="banner-title">
-            <span class="colorful-text">Frontend Developer</span>
-            <span class="colorful-text">Problem Solver</span>
-            <span class="colorful-text">Detail Oriented</span>
-            <span class="colorful-text">Design-Driven</span>
-            <button type="button" class="banner-btn">Say Hello</button>
-          </h1>
-        </div>
+    <header id="home" class="header">
+      <section class="wrapper">
+        <nav class="navbar">
+          <div class="brand-and-toggler">
+            <a href="index.html" class="navbar-brand">Charles Hedrick</a>
+            <button type="button" class="navbar-toggler" id="navbar-toggler">
+              <i class="bi bi-list toggler-icon"></i>
+            </button>
+          </div>
+          <div class="nav-dropdown">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="#process" class="nav-link">Work Process</a>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+        </nav>
+        <h1 class="banner-title">
+          <h1>Nice to meet you!</h1>
+          <h2>I'm Charles Hedrick</h2>
+          <button type="button" class="banner-btn">Say Hello</button>
+        </h1>
       </section>
     </header>
 
-    <!-- about -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Introduce yourself and share your background as a frontend developer.
-      </p>
-    </section>
+    <main id="main">
+      <!-- about -->
+      <section class="wrapper" id="about">
+        <h2>About Me</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic
+          deserunt neque minima facilis minus eum laudantium magnam dolores
+          adipisci tempora voluptatum quae quibusdam cumque laborum perferendis
+          maxime dolorem odio, dicta eveniet. Fuga, a hic magni enim dicta
+          doloremque ipsum quam aliquid atque voluptatibus id eaque, optio eius
+          tempora. Dolorem, error. Consectetur esse provident blanditiis numquam
+          tempore laborum eius perspiciatis voluptas animi veniam? Consequuntur
+          dignissimos quia iste. Expedita accusamus mollitia, nisi iusto
+          possimus harum tempore voluptatem non natus minus doloremque, eaque
+          sapiente cumque. Ducimus sed deserunt nihil magnam. Assumenda!
+        </p>
+      </section>
 
-    <!-- skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML5, CSS3, JavaScript</li>
-        <li>React, Angular, Vue.js</li>
-        <li>Responsive Design</li>
-        <!-- Add more skills -->
-      </ul>
-    </section>
+      <!-- skills -->
+      <section class="wrapper" id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML5, CSS3, JavaScript</li>
+          <li>React, Angular, Vue.js</li>
+          <li>Responsive Design</li>
+          <!-- Add more skills -->
+        </ul>
+      </section>
 
-    <!-- portfolio -->
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <!-- Showcase your projects with images, descriptions, and links -->
-    </section>
+      <!-- portfolio -->
+      <section class="wrapper" id="portfolio">
+        <h2>Portfolio</h2>
+        <!-- Showcase your projects with images, descriptions, and links -->
+      </section>
 
-    <!-- process -->
-    <section id="process">
-      <h2>Work Process</h2>
-      <p>Explain your approach to web development projects.</p>
-    </section>
+      <!-- process -->
+      <section class="wrapper" id="process">
+        <h2>Work Process</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          laudantium quidem repellendus nisi soluta quam. Nihil excepturi ipsam
+          deserunt accusantium dolore, pariatur a natus impedit, provident
+          veritatis, corrupti sit tempora iste placeat consequatur. Aut dolorem
+          ea commodi facere illo repellendus excepturi? Labore quas
+          exercitationem incidunt. Quaerat illum nam incidunt eaque?
+        </p>
+      </section>
 
-    <!-- testimonials -->
-    <section id="testimonials">
-      <h2>Testimonials</h2>
-      <!-- Include client testimonials or endorsements -->
-    </section>
+      <!-- testimonials -->
+      <section class="wrapper" id="testimonials">
+        <h2>Testimonials</h2>
+        <!-- Include client testimonials or endorsements -->
+      </section>
 
-    <!-- contact -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Get in touch with me. Email: your@email.com</p>
-    </section>
+      <!-- contact -->
+      <section class="wrapper" id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch with me. Email: your@email.com</p>
+      </section>
+    </main>
 
     <!-- footer -->
     <footer>

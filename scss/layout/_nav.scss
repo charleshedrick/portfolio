@@ -1,72 +1,10 @@
-.navbar {
-  position: fixed;
-  top: 0;
-  z-index: 9;
-  background: var(--nav);
-  width: 100%;
-  --bs-navbar-toggler-focus-width: 0;
-  --bs-navbar-padding-y: 0;
-}
-
 .navbar-brand {
-  padding: 0.3em 0.8em;
-  font-weight: 900;
-  font-size: 2em;
-  margin-right: 0;
+  font-size: var(--fs-48);
+  font-weight: 800;
 }
-.brand-and-toggler {
+
+.nav-dropdown {
+  outline: 1px solid red;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.navbar-toggler {
-  color: var(--secondary-color);
-  background: none;
-  padding: 0.4rem 0.4rem;
-  border: none;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    background: var(--secondary-color);
-    color: var(--white);
-  }
-  &:active {
-    border: none;
-  }
-}
-
-.nav-item {
-  padding: 0.5rem 3.5vw;
-  transition: background 0.6s ease-in-out;
-
-  &:hover {
-    background-color: var(--secondary-color);
-  }
-}
-
-.nav-link {
-  text-transform: uppercase;
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 4px;
-}
-
-.navbar-collapse {
-  height: 0;
-  overflow: hidden;
-  transition: all 0.4s ease-in-out;
-}
-
-.navbar-nav {
-  text-align: center;
-}
-
-// showNav class
-.showNav {
-  height: 291px;
-  padding-top: 0.7rem;
+  flex-direction: column;
 }

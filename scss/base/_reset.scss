@@ -1,3 +1,6 @@
+@import "../utilities/_variables";
+@import "../utilities/_mixins";
+
 /* Reset all margins, padding, and borders */
 *,
 *::before,
@@ -5,13 +8,12 @@
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box; /* Include padding and border in element's total width/height */
+  box-sizing: border-box;
 }
 
 /* Normalize font properties */
 html {
-  font-family: sans-serif; /* Use a generic font stack */
-  line-height: 1.15; /* Ensure consistent line height */
+  font-family: sans-serif;
   -webkit-text-size-adjust: 100%; /* Prevent text size adjustment in Safari */
 }
 
@@ -25,7 +27,7 @@ h6,
 p,
 ul {
   margin: 0;
-  //font-size: inherit;
+  font-size: inherit;
   font-weight: inherit;
 }
 

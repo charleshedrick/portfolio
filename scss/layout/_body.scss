@@ -1,4 +1,33 @@
 body {
-  background-color: var(--body-bg);
-  color: var(--text-color);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--fs-18);
+  line-height: 1.56;
+}
+
+// MOBILE
+@media (min-width: $mobile-breakpoint) {
+  .wrapper {
+    width: calc(100% - 2rem);
+    max-width: var(--container);
+    margin-inline: auto;
+  }
+}
+
+// TABLET
+@media (min-width: $tablet-breakpoint) {
+  .wrapper {
+    width: calc(100% - 2rem);
+    max-width: var(--container);
+    margin-inline: auto;
+  }
+}
+
+// DESKTOP
+@media (min-width: $desktop-breakpoint) {
+  .wrapper {
+    width: calc(100% - 2rem);
+    max-width: var(--container);
+    margin-inline: auto;
+  }
 }
