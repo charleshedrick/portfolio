@@ -1,0 +1,26 @@
+/* Primary Colors */
+:root {
+  --primary-color: #fff679;
+  --primary-dark: #f5eb63;
+  --primary-light: #fff99f;
+
+  --secondary-color: #4e95d3;
+  --secondary-dark: #4378a7;
+  --secondary-light: #4e95d3;
+
+  --red: rgb(224, 70, 70);
+  --purple: rgb(159, 82, 221);
+  --green: rgb(73, 177, 108);
+
+  --black: #303030;
+  --white: #ecebe3;
+  --gray: #ccc;
+
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --error-color: #dc3545;
+
+  --body-bg: var(--primary-color);
+  --text-color: var(--black);
+  --nav: var(--white);
+}

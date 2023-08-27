@@ -1,0 +1,61 @@
+.header-banner {
+  position: relative;
+  background: url(../images/smiley_background.jpg);
+  background-size: 20%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header-banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-line {
+  width: 300px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+}
+
+.banner-title {
+  font-weight: 900;
+  font-size: 3em;
+}
+
+.banner-title span {
+  display: block;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px var(--black);
+  -webkit-text-fill-color: var(--white);
+}
+
+// .banner-title span:nth-child(1) {
+//   color: var(--red);
+// }
+
+// .banner-title span:nth-child(2) {
+//   color: var(--purple);
+// }
+
+// .banner-title span:nth-child(3) {
+//   color: var(--purple);
+// }
+
+// .banner-title span:nth-child(4) {
+//   color: var(--purple);
+// }
+
+// .banner-title span:last-of-type {
+//   font-size: 3rem;
+//   text-transform: capitalize;
+// }

@@ -1,0 +1,76 @@
+/* Reset all margins, padding, and borders */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+/* Normalize font properties */
+html {
+  font-family: sans-serif; /* Use a generic font stack */
+  line-height: 1.15; /* Ensure consistent line height */
+  -webkit-text-size-adjust: 100%; /* Prevent text size adjustment in Safari */
+}
+
+/* Reset margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  //font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Reset list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset form elements */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Normalize vertical alignment for inputs in different browsers */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+textarea {
+  vertical-align: middle;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Reset image alignment */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

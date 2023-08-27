@@ -1,0 +1,245 @@
+/* Reset all margins, padding, and borders */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+/* Normalize font properties */
+html {
+  font-family: sans-serif; /* Use a generic font stack */
+  line-height: 1.15; /* Ensure consistent line height */
+  -webkit-text-size-adjust: 100%; /* Prevent text size adjustment in Safari */
+}
+
+/* Reset margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  font-weight: inherit;
+}
+
+/* Reset list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset form elements */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Normalize vertical alignment for inputs in different browsers */
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=search],
+textarea {
+  vertical-align: middle;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Reset image alignment */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.text-light {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+
+.banner-btn {
+  display: block;
+  text-transform: capitalize;
+  font-size: 0.5em;
+  font-weight: 600;
+  margin: 2rem auto;
+  border: 3px solid var(--black);
+  border-radius: 0.5em;
+  background-color: var(--white);
+  color: var(--black);
+  padding: 0.9rem;
+  transition: all 0.4s ease-in-out;
+}
+.banner-btn:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--text-color);
+}
+
+.header-banner {
+  position: relative;
+  background: url(../images/smiley_background.jpg);
+  background-size: 20%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header-banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-line {
+  width: 300px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+}
+
+.banner-title {
+  font-weight: 900;
+  font-size: 3em;
+}
+
+.banner-title span {
+  display: block;
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px var(--black);
+  -webkit-text-fill-color: var(--white);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background: var(--nav);
+  width: 100%;
+  --bs-navbar-toggler-focus-width: 0;
+  --bs-navbar-padding-y: 0;
+}
+
+.navbar-brand {
+  padding: 0.3em 0.8em;
+  font-weight: 900;
+  font-size: 2em;
+  margin-right: 0;
+}
+
+.brand-and-toggler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-toggler {
+  color: var(--secondary-color);
+  background: none;
+  padding: 0.4rem 0.4rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-toggler:hover {
+  background: var(--secondary-color);
+  color: var(--white);
+}
+.navbar-toggler:active {
+  border: none;
+}
+
+.nav-item {
+  padding: 0.5rem 3.5vw;
+  transition: background 0.6s ease-in-out;
+}
+.nav-item:hover {
+  background-color: var(--secondary-color);
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.navbar-collapse {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.showNav {
+  height: 291px;
+  padding-top: 0.7rem;
+}
+
+/* Primary Colors */
+:root {
+  --primary-color: #fff679;
+  --primary-dark: #f5eb63;
+  --primary-light: #fff99f;
+  --secondary-color: #4e95d3;
+  --secondary-dark: #4378a7;
+  --secondary-light: #4e95d3;
+  --red: rgb(224, 70, 70);
+  --purple: rgb(159, 82, 221);
+  --green: rgb(73, 177, 108);
+  --black: #303030;
+  --white: #ecebe3;
+  --gray: #ccc;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --error-color: #dc3545;
+  --body-bg: var(--primary-color);
+  --text-color: var(--black);
+  --nav: var(--white);
+}
+
+/*# sourceMappingURL=style.css.map */
