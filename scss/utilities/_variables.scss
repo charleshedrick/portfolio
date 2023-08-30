@@ -5,7 +5,7 @@
   --tertiary-color: hsl(197, 64%, 34%);
   --highlight-color: hsl(52, 88%, 75%);
 
-  --black: hsl(217, 71%, 19%);
+  --black: hsl(217, 33%, 22%);
   --white: hsl(53, 19%, 91%);
 
   --success-color: #6bd684;
@@ -18,14 +18,18 @@
 
   --fs-18: 1.125rem;
   --fs-24: 1.5rem;
+  --fs-32: 2rem;
+  --fs-36: 2.25rem;
   --fs-40: 2.5rem; //mobile
   --fs-48: 3rem; //desktop
   --fs-72: 4.5rem; //mobile
   --fs-88: 5.5rem; //desktop
 
   --container: 69.375rem; // 1110px
+
+  --transition: 0.3s ease-in-out; //hover over transition
 }
 
-$mobile-breakpoint: 768px;
-$tablet-breakpoint: 992px;
-$desktop-breakpoint: 1200px;
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;

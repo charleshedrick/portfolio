@@ -1,12 +1,17 @@
 body {
-  background-color: var(--black);
-  color: var(--white);
   font-size: var(--fs-18);
   line-height: 1.56;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+body.dark-theme {
+  background-color: var(--black);
+  color: var(--white);
 }
 
 // MOBILE
-@media (min-width: $mobile-breakpoint) {
+@media (max-width: var(--mobile-breakpoint)) {
   .wrapper {
     width: calc(100% - 2rem);
     max-width: var(--container);
@@ -15,18 +20,18 @@ body {
 }
 
 // TABLET
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: var(--mobile-breakpoint)) and (max-width: var(--tablet-breakpoint)) {
   .wrapper {
-    width: calc(100% - 2rem);
+    width: calc(100% - 3rem);
     max-width: var(--container);
     margin-inline: auto;
   }
 }
 
 // DESKTOP
-@media (min-width: $desktop-breakpoint) {
+@media (min-width: var(--tablet-breakpoint)) {
   .wrapper {
-    width: calc(100% - 2rem);
+    width: calc(100% - 3rem);
     max-width: var(--container);
     margin-inline: auto;
   }

@@ -1,10 +1,75 @@
-.navbar-brand {
-  font-size: var(--fs-48);
-  font-weight: 800;
+.nav-item {
+  padding-bottom: 30px;
 }
 
-.nav-dropdown {
-  outline: 1px solid red;
+.nav-link {
+  color: var(--black);
+  font-size: var(--fs-24);
+  //animation-name: slideleft; //not working
+  //animation-duration: 1s;
+  transition: color var(--transition);
+
+  &:hover {
+    color: var(--secondary-color);
+  }
+  //@include color-change-hover(var(-secondary-color);)
+}
+
+.nav {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+.nav.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+// MOBILE
+@media (max-width: $mobile-breakpoint) {
+  .brand-and-toggler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-brand {
+    font-size: var(--fs-18);
+    //font-weight: 800;
+  }
+  .navbar-toggler {
+    float: right;
+  }
+}
+
+// TABLET
+@media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+  .navbar-brand {
+    font-size: var(--fs-24);
+    //font-weight: 800;
+  }
+  .nav-link {
+    //margin-top: 20px;
+    font-size: var(--fs-32);
+  }
+}
+
+// DESKTOP
+@media (min-width: $tablet-breakpoint) {
+  .navbar-brand {
+    font-size: var(--fs-32);
+    //font-weight: 800;
+  }
+  .nav-link {
+    font-size: var(--fs-36);
+  }
 }

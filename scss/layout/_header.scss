@@ -1,3 +1,52 @@
-.header {
-  background-color: var(--secondary-color);
+.brand-and-toggler {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  width: 100vw;
+  padding: 0 1rem;
+}
+
+brand-and-toggler.dark-theme {
+  background-color: var(--white);
+  color: var(--black);
+}
+.navbar {
+  position: fixed;
+}
+
+.brand-and-toggler.night-mode {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.navbar-brand {
+  font-weight: 300;
+  float: left;
+  color: var(--white);
+  animation-name: slideleft;
+  animation-duration: 1s;
+  transition: color var(--transition);
+
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
+
+.navbar-brand.night-mode {
+  color: var(--black);
+}
+
+.contact-container {
+  //outline: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
+.bi-envelope-fill {
+  padding-right: 10px;
+  border-right: 2px solid var(--white);
 }

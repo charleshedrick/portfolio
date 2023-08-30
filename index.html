@@ -10,35 +10,66 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body id="body">
     <!-- header section -->
     <header id="home" class="header">
-      <section class="wrapper">
-        <nav class="navbar">
-          <div class="brand-and-toggler">
-            <a href="index.html" class="navbar-brand">Charles Hedrick</a>
-            <button type="button" class="navbar-toggler" id="navbar-toggler">
+      <div class="navbar light-theme">
+        <div class="brand-and-toggler">
+          <a href="index.html" class="navbar-brand">charles.hedrick</a>
+          <div class="contact-container">
+            <i class="bi bi-linkedin nav-icon"></i>
+            <a href="https://github.com/charleshedrick" target="”_blank”"
+              ><i class="bi bi-github nav-icon"></i
+            ></a>
+            <i class="bi bi-instagram nav-icon"></i>
+            <i class="bi bi-envelope-fill nav-icon"></i>
+            <i
+              class="bi bi-moon-stars-fill nav-icon"
+              id="theme-toggle-button"
+              title="darkmode switch"
+            ></i>
+            <button
+              type="button"
+              class="navbar-toggler toggle"
+              id="navbar-toggler"
+            >
               <i class="bi bi-list toggler-icon"></i>
             </button>
           </div>
-          <div class="nav-dropdown">
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#portfolio" class="nav-link">Portfolio</a>
-            <a href="#process" class="nav-link">Work Process</a>
-            <a href="#testimonials" class="nav-link">Testimonials</a>
-            <a href="#contact" class="nav-link">Contact</a>
-          </div>
+        </div>
+        <nav class="nav">
+          <ul class="navbar-dropdown">
+            <li class="nav-item">
+              <a href="#about" class="nav-link toggle">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link toggle">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link toggle">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#process" class="nav-link toggle">Work Process</a>
+            </li>
+            <li class="nav-item">
+              <a href="#testimonials" class="nav-link toggle">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link toggle">Contact</a>
+            </li>
+          </ul>
         </nav>
-        <h1 class="banner-title">
-          <h1>Nice to meet you!</h1>
-          <h2>I'm Charles Hedrick</h2>
-          <button type="button" class="banner-btn">Say Hello</button>
-        </h1>
-      </section>
+      </div>
     </header>
 
     <main id="main">
+      <!-- hero -->
+      <section class="wrapper welcome-text-wrapper">
+        <!-- <h1 class="banner-title">Nice to meet you!</h1> -->
+        <h2 class="banner-title">Hi, I'm Charles Hedrick</h2>
+        <p>a front end developer based out of Jacksonville, Florida</p>
+        <button type="button" class="banner-btn">Say Hello</button>
+      </section>
       <!-- about -->
       <section class="wrapper" id="about">
         <h2>About Me</h2>
