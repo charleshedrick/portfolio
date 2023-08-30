@@ -33,7 +33,7 @@ header {
 }
 
 .bi-envelope-fill {
-  //padding-right: 15px;
+  padding-right: 15px;
   border-right: 2px solid var(--white);
 }
 
@@ -41,9 +41,6 @@ header {
 @media (max-width: $mobile-breakpoint) {
   .navbar-brand {
     font-size: var(--fs-18);
-  }
-  .hide-mobile {
-    display: none;
   }
 }
 
