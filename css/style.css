@@ -244,6 +244,32 @@ header {
   .navbar-brand {
     font-size: var(--fs-18);
   }
+  .hide-mobile {
+    display: none;
+  }
+  .header-buttons {
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    justify-content: center;
+  }
+  .header-icon {
+    padding: 10px;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .bi-envelope-fill {
+    border-right: none;
+  }
+  .navbar-toggler {
+    position: absolute;
+    right: 0;
+  }
+  #theme-toggle-button {
+    position: absolute;
+    left: 0;
+    padding: 20px;
+  }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .navbar-brand {
