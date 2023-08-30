@@ -1,10 +1,8 @@
 /* Primary Colors */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 :root {
   --primary-color: hsl(170, 17%, 59%);
-  --secondary-color: hsl(188, 54%, 39%);
-  --tertiary-color: hsl(197, 64%, 34%);
-  --highlight-color: hsl(52, 88%, 75%);
+  --secondary-color: hsl(7, 58%, 60%);
   --black: hsl(217, 33%, 22%);
   --white: hsl(53, 19%, 91%);
   --success-color: #6bd684;
@@ -14,11 +12,15 @@
   --text-color: var(--white);
   --nav: var(--white);
   --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
   --fs-24: 1.5rem;
+  --fs-28: 1.75rem;
   --fs-32: 2rem;
   --fs-36: 2.25rem;
   --fs-40: 2.5rem;
   --fs-48: 3rem;
+  --fs-56: 3.5rem;
+  --fs-64: 4rem;
   --fs-72: 4.5rem;
   --fs-88: 5.5rem;
   --container: 69.375rem;
@@ -142,89 +144,27 @@ img {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
-.banner-btn {
-  display: block;
-  text-transform: capitalize;
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 2rem auto;
-  border-radius: 0.5em;
-  background-color: var(--white);
-  color: var(--black);
-  padding: 1rem 2rem;
-  transition: color 0.2s ease-in-out;
-}
-.banner-btn:hover {
-  background-color: var(--secondary-color);
+.header-icon {
   color: var(--white);
 }
-
-.navbar-toggler {
-  height: 40px;
-  width: 40px;
-  margin: 5px;
-  border-radius: 50%;
-  transition: all 0.2s ease-in-out;
-}
-.navbar-toggler:hover {
-  color: transparent;
-  border: 2px solid var(--tertiary-color);
+.header-icon:hover {
+  color: var(--secondary-color);
 }
 
 .toggler-icon {
-  font-size: var(--fs-24);
-}
-
-/* Style the toggle switch container */
-.toggle-container {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 10px;
-}
-
-/* Style the toggle switch */
-.theme-toggle-switch {
-  display: none;
-}
-
-.theme-toggle-switch-label {
-  display: inline-block;
-  width: 40px;
-  height: 20px;
-  background-color: #ccc;
-  border-radius: 20px;
-  position: relative;
-}
-
-.theme-toggle-switch-label::before {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background-color: white;
-  top: 1px;
-  left: 1px;
-  transition: transform 0.3s ease;
-}
-
-.theme-toggle-switch:checked + .theme-toggle-switch-label::before {
-  transform: translateX(20px);
-}
-
-.nav-icon {
   color: var(--white);
+  font-size: var(--fs-24);
+  padding: 10px 20px 10px 10px;
   transition: color var(--transition);
 }
-.nav-icon:hover {
+.toggler-icon:hover {
   color: var(--secondary-color);
 }
 
 body {
-  font-size: var(--fs-18);
   line-height: 1.56;
   background-color: var(--white);
   color: var(--black);
@@ -235,27 +175,36 @@ body.dark-theme {
   color: var(--white);
 }
 
-@media (max-width: var(--mobile-breakpoint)) {
+h2 {
+  font-size: var(--fs-24);
+  text-decoration-style: wavy;
+}
+
+@media (max-width: 480px) {
   .wrapper {
     width: calc(100% - 2rem);
     max-width: var(--container);
     margin-inline: auto;
   }
 }
-@media (min-width: var(--mobile-breakpoint)) and (max-width: var(--tablet-breakpoint)) {
+@media (min-width: 480px) and (max-width: var(--tablet-breakpoint)) {
   .wrapper {
     width: calc(100% - 3rem);
     max-width: var(--container);
     margin-inline: auto;
   }
 }
-@media (min-width: var(--tablet-breakpoint)) {
+@media (min-width: 768px) {
   .wrapper {
     width: calc(100% - 3rem);
     max-width: var(--container);
     margin-inline: auto;
   }
 }
+header {
+  position: fixed;
+}
+
 .brand-and-toggler {
   overflow: hidden;
   display: flex;
@@ -264,20 +213,6 @@ body.dark-theme {
   background-color: var(--black);
   width: 100vw;
   padding: 0 1rem;
-}
-
-brand-and-toggler.dark-theme {
-  background-color: var(--white);
-  color: var(--black);
-}
-
-.navbar {
-  position: fixed;
-}
-
-.brand-and-toggler.night-mode {
-  background-color: var(--black);
-  color: var(--white);
 }
 
 .navbar-brand {
@@ -292,15 +227,11 @@ brand-and-toggler.dark-theme {
   color: var(--secondary-color);
 }
 
-.navbar-brand.night-mode {
-  color: var(--black);
-}
-
-.contact-container {
+.header-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px;
+  width: 210px;
 }
 
 .bi-envelope-fill {
@@ -308,26 +239,52 @@ brand-and-toggler.dark-theme {
   border-right: 2px solid var(--white);
 }
 
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: var(--fs-18);
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .navbar-brand {
+    font-size: var(--fs-20);
+  }
+}
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: var(--fs-24);
+  }
+}
 .welcome-text-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
 }
 .welcome-text-wrapper p {
-  text-align: center;
+  margin-top: 10px;
+  animation-name: slideup;
+  animation-duration: 2s;
 }
 
 .banner-title {
   font-size: var(--fs-48);
-  font-weight: 700;
+  font-weight: 1000;
+  line-height: 1;
+  animation-name: slidedown;
+  animation-duration: 2s;
 }
 
-@media (max-width: var(--mobile-breakpoint)) {
+@media (max-width: 480px) {
   .banner-title {
-    margin-top: 10px;
-    font-size: var(--fs-32);
+    font-size: var(--fs-56);
+    width: calc(100% - 3rem);
+  }
+  .welcome-text-wrapper p {
+    width: calc(100% - 3rem);
   }
 }
 .nav-item {
@@ -368,25 +325,13 @@ brand-and-toggler.dark-theme {
     justify-content: space-between;
     align-items: center;
   }
-  .navbar-brand {
-    font-size: var(--fs-18);
-  }
-  .navbar-toggler {
-    float: right;
-  }
 }
 @media (min-width: 480px) and (max-width: 768px) {
-  .navbar-brand {
-    font-size: var(--fs-24);
-  }
   .nav-link {
     font-size: var(--fs-32);
   }
 }
-@media (min-width: 768px) {
-  .navbar-brand {
-    font-size: var(--fs-32);
-  }
+@media (min-width: 768px) and (max-width: 1024px) {
   .nav-link {
     font-size: var(--fs-36);
   }
@@ -434,9 +379,7 @@ brand-and-toggler.dark-theme {
 /* Primary Colors */
 :root {
   --primary-color: hsl(170, 17%, 59%);
-  --secondary-color: hsl(188, 54%, 39%);
-  --tertiary-color: hsl(197, 64%, 34%);
-  --highlight-color: hsl(52, 88%, 75%);
+  --secondary-color: hsl(7, 58%, 60%);
   --black: hsl(217, 33%, 22%);
   --white: hsl(53, 19%, 91%);
   --success-color: #6bd684;
@@ -446,11 +389,15 @@ brand-and-toggler.dark-theme {
   --text-color: var(--white);
   --nav: var(--white);
   --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
   --fs-24: 1.5rem;
+  --fs-28: 1.75rem;
   --fs-32: 2rem;
   --fs-36: 2.25rem;
   --fs-40: 2.5rem;
   --fs-48: 3rem;
+  --fs-56: 3.5rem;
+  --fs-64: 4rem;
   --fs-72: 4.5rem;
   --fs-88: 5.5rem;
   --container: 69.375rem;

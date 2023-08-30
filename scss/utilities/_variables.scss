@@ -1,9 +1,9 @@
 /* Primary Colors */
 :root {
   --primary-color: hsl(170, 17%, 59%);
-  --secondary-color: hsl(188, 54%, 39%);
-  --tertiary-color: hsl(197, 64%, 34%);
-  --highlight-color: hsl(52, 88%, 75%);
+  //--secondary-color: hsl(188, 54%, 39%);
+  //--secondary-color: hsl(197, 64%, 34%);
+  --secondary-color: hsl(7, 58%, 60%);
 
   --black: hsl(217, 33%, 22%);
   --white: hsl(53, 19%, 91%);
@@ -17,11 +17,15 @@
   --nav: var(--white);
 
   --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
   --fs-24: 1.5rem;
+  --fs-28: 1.75rem;
   --fs-32: 2rem;
   --fs-36: 2.25rem;
   --fs-40: 2.5rem; //mobile
   --fs-48: 3rem; //desktop
+  --fs-56: 3.5rem;
+  --fs-64: 4rem;
   --fs-72: 4.5rem; //mobile
   --fs-88: 5.5rem; //desktop
 

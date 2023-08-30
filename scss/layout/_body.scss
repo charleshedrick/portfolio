@@ -1,5 +1,5 @@
 body {
-  font-size: var(--fs-18);
+  //font-size: var(--fs-18);
   line-height: 1.56;
   background-color: var(--white);
   color: var(--black);
@@ -10,8 +10,13 @@ body.dark-theme {
   color: var(--white);
 }
 
+h2 {
+  font-size: var(--fs-24);
+  text-decoration-style: wavy;
+}
+
 // MOBILE
-@media (max-width: var(--mobile-breakpoint)) {
+@media (max-width: $mobile-breakpoint) {
   .wrapper {
     width: calc(100% - 2rem);
     max-width: var(--container);
@@ -20,7 +25,7 @@ body.dark-theme {
 }
 
 // TABLET
-@media (min-width: var(--mobile-breakpoint)) and (max-width: var(--tablet-breakpoint)) {
+@media (min-width: $mobile-breakpoint) and (max-width: var(--tablet-breakpoint)) {
   .wrapper {
     width: calc(100% - 3rem);
     max-width: var(--container);
@@ -29,7 +34,7 @@ body.dark-theme {
 }
 
 // DESKTOP
-@media (min-width: var(--tablet-breakpoint)) {
+@media (min-width: $tablet-breakpoint) {
   .wrapper {
     width: calc(100% - 3rem);
     max-width: var(--container);

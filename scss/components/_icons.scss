@@ -1,5 +1,16 @@
-.nav-icon {
+// adjusts color
+.header-icon {
   color: var(--white);
+
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
+
+.toggler-icon {
+  color: var(--white);
+  font-size: var(--fs-24);
+  padding: 10px 20px 10px 10px;
   transition: color var(--transition);
 
   &:hover {

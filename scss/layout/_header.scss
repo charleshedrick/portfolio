@@ -1,3 +1,7 @@
+header {
+  position: fixed;
+}
+
 .brand-and-toggler {
   overflow: hidden;
   display: flex;
@@ -6,19 +10,6 @@
   background-color: var(--black);
   width: 100vw;
   padding: 0 1rem;
-}
-
-brand-and-toggler.dark-theme {
-  background-color: var(--white);
-  color: var(--black);
-}
-.navbar {
-  position: fixed;
-}
-
-.brand-and-toggler.night-mode {
-  background-color: var(--black);
-  color: var(--white);
 }
 
 .navbar-brand {
@@ -34,19 +25,40 @@ brand-and-toggler.dark-theme {
   }
 }
 
-.navbar-brand.night-mode {
-  color: var(--black);
-}
-
-.contact-container {
-  //outline: 1px solid red;
+.header-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px;
+  width: 210px;
 }
 
 .bi-envelope-fill {
   padding-right: 10px;
   border-right: 2px solid var(--white);
+}
+
+// MOBILE
+@media (max-width: $mobile-breakpoint) {
+  .navbar-brand {
+    font-size: var(--fs-18);
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
+
+// TABLET
+@media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+  .navbar-brand {
+    font-size: var(--fs-20);
+    //font-weight: 800;
+  }
+}
+
+// DESKTOP
+@media (min-width: $tablet-breakpoint) {
+  .navbar-brand {
+    font-size: var(--fs-24);
+    //font-weight: 800;
+  }
 }
