@@ -149,6 +149,7 @@ body {
 
 .header-icon {
   color: var(--white);
+  transition: color var(--transition);
 }
 .header-icon:hover {
   color: var(--secondary-color);
@@ -294,6 +295,7 @@ header {
 .nav-link {
   color: var(--black);
   font-size: var(--fs-24);
+  font-weight: 1000;
   transition: color var(--transition);
 }
 .nav-link:hover {
@@ -403,3 +405,5 @@ header {
   --container: 69.375rem;
   --transition: 0.3s ease-in-out;
 }
+
+/*# sourceMappingURL=style.css.map */

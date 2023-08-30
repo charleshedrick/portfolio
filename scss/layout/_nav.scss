@@ -5,6 +5,7 @@
 .nav-link {
   color: var(--black);
   font-size: var(--fs-24);
+  font-weight: 1000;
   transition: color var(--transition);
 
   &:hover {

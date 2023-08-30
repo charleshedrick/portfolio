@@ -1,6 +1,7 @@
 // adjusts color
 .header-icon {
   color: var(--white);
+  transition: color var(--transition);
 
   &:hover {
     color: var(--secondary-color);

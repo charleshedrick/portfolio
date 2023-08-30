@@ -29,10 +29,19 @@ const header = document.querySelector("header"); // Select the header element
 function setTheme(theme) {
   body.classList.remove("light-theme", "dark-theme");
   body.classList.add(theme);
-  header.classList.remove("light-header", "dark-header"); // Remove previous header classes
-  header.classList.add(`${theme}-header`); // Apply the appropriate header class
-  // Save the user's preference in a cookie
+  header.classList.remove("light-header", "dark-header");
+  header.classList.add(`${theme}-header`);
   document.cookie = `theme=${theme}; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/`;
+
+  // Update the icon based on the theme
+  const themeToggleButton = document.getElementById("theme-toggle-button");
+  if (theme === "dark-theme") {
+    themeToggleButton.classList.remove("bi-sun-fill");
+    themeToggleButton.classList.add("bi-moon-fill");
+  } else {
+    themeToggleButton.classList.remove("bi-moon-fill");
+    themeToggleButton.classList.add("bi-sun-fill");
+  }
 }
 
 function toggleTheme() {
