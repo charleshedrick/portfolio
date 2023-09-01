@@ -36,11 +36,11 @@ function setTheme(theme) {
   // Update the icon based on the theme
   const themeToggleButton = document.getElementById("theme-toggle-button");
   if (theme === "dark-theme") {
-    themeToggleButton.classList.remove("bi-sun-fill");
-    themeToggleButton.classList.add("bi-moon-fill");
+    themeToggleButton.classList.remove("bi-sun-fill", "header-icon");
+    themeToggleButton.classList.add("bi-moon-fill", "header-icon");
   } else {
-    themeToggleButton.classList.remove("bi-moon-fill");
-    themeToggleButton.classList.add("bi-sun-fill");
+    themeToggleButton.classList.remove("bi-moon-fill", "header-icon");
+    themeToggleButton.classList.add("bi-sun-fill", "header-icon");
   }
 }
 
@@ -67,23 +67,68 @@ function checkThemeCookie() {
 // Call checkThemeCookie() to set the theme on page load
 checkThemeCookie();
 
-// Attach click event listener to theme toggle button
-document
-  .getElementById("theme-toggle-button")
-  .addEventListener("click", toggleTheme);
+// LIGHT/DARK ICON TOGGLE //
+document.addEventListener("DOMContentLoaded", function () {
+  // Attach click event listener to the theme toggle button
+  const themeToggleButton = document.getElementById("theme-toggle-button");
+  themeToggleButton.addEventListener("click", toggleTheme);
 
-// ... Existing toggle switch code ...
-
-// Update theme based on toggle switch state
-function updateTheme() {
-  if (themeToggleSwitch.checked) {
-    setTheme("dark-theme");
-  } else {
-    setTheme("light-theme");
+  // Update theme based on toggle button click
+  function toggleTheme() {
+    const currentTheme = document.body.classList.contains("dark-theme")
+      ? "light-theme"
+      : "dark-theme";
+    setTheme(currentTheme);
   }
-}
+});
 
-themeToggleSwitch.addEventListener("change", updateTheme);
+// SCROLLING EFFECTS //
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll(".section");
+  const buttonUp = document.querySelectorAll(".arrow-up");
+  const buttonDown = document.querySelectorAll(".arrow-down");
+  const scrollToTopButton = document.getElementById("scrollToTop");
+  let currentSection = 0;
 
-// Call updateTheme() to set the theme on toggle switch load
-updateTheme();
+  function scrollToSection(index) {
+    if (index >= 0 && index < sections.length) {
+      sections[index].scrollIntoView({ behavior: "smooth" });
+      currentSection = index;
+    }
+  }
+
+  function toggleScrollToTopButton() {
+    scrollToTopButton.style.display =
+      window.scrollY >= sections[1].offsetTop ? "block" : "none";
+  }
+
+  // Scrolling with mouse wheel
+  window.addEventListener("wheel", function (event) {
+    if (event.deltaY > 0 && currentSection < sections.length - 1) {
+      currentSection++;
+      scrollToSection(currentSection);
+    } else if (event.deltaY < 0 && currentSection > 0) {
+      currentSection--;
+      scrollToSection(currentSection);
+    }
+  });
+
+  // Smooth scrolling with arrow buttons
+  buttonUp.forEach((button) => {
+    button.addEventListener("click", function () {
+      currentSection--;
+      scrollToSection(currentSection);
+    });
+  });
+
+  buttonDown.forEach((button) => {
+    button.addEventListener("click", function () {
+      currentSection++;
+      scrollToSection(currentSection);
+    });
+  });
+
+  // Show/hide "Up" button
+  window.addEventListener("scroll", toggleScrollToTopButton);
+  toggleScrollToTopButton(); // Initial call to set button visibility
+});

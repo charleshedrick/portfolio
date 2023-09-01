@@ -1,41 +1,39 @@
 header {
   position: fixed;
   z-index: 999;
+  width: 100vw;
 }
 
 .brand-and-toggler {
-  overflow: hidden;
+  //overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--black);
+  padding: 0 1rem;
+}
+
+.header-button-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--black);
-  width: 100vw;
-  padding: 0 1rem;
+  width: 200px;
 }
 
 .navbar-brand {
   font-weight: 300;
   float: left;
   color: var(--white);
-  animation-name: slideleft;
-  animation-duration: 1s;
   transition: color var(--transition);
-
+  animation: slideleft;
+  animation-duration: 0.9s;
   &:hover {
     color: var(--secondary-color);
   }
 }
 
-.header-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 210px;
-}
-
-.bi-envelope-fill {
+.bi-mailbox {
   padding-right: 15px;
-  border-right: 2px solid var(--white);
+  border-right: 1px solid var(--white);
 }
 
 // MOBILE

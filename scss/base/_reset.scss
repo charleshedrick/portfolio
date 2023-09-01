@@ -9,12 +9,14 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  text-rendering: optimizeLegibility;
 }
 
 /* Normalize font properties */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%; /* Prevent text size adjustment in Safari */
+  scroll-behavior: smooth;
 }
 
 /* Reset margins */
@@ -65,6 +67,7 @@ textarea {
 
 /* Remove default button styles */
 button {
+  color: inherit;
   border: none;
   background: none;
   cursor: pointer;

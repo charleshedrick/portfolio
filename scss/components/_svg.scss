@@ -1,0 +1,48 @@
+.svg-circle {
+  width: 200px;
+  height: 200px;
+  grid-column: 10/13;
+  grid-row: 9/12;
+  animation-name: slideup;
+  animation-duration: 1s;
+  animation: moveUpDown 2s ease-in-out infinite;
+}
+.svg-circle-top-split {
+  grid-column: 6/10;
+  grid-row: 2/5;
+  animation: spinright 10s linear infinite;
+}
+.svg-circle-bottom-split {
+  grid-column: 6/10;
+  grid-row: 2/5;
+  animation: spinleft 10s linear infinite;
+}
+
+.svg-dot-matrix {
+  grid-column: 10/14;
+  grid-row: 3/8;
+  z-index: -1;
+  animation-name: slidedown;
+  animation-duration: 2s;
+}
+
+.svg-dot-matrix-work {
+  z-index: -1;
+  height: 400px;
+  width: 200px;
+  animation-name: slidedown;
+  animation-duration: 2s;
+}
+
+.svg-x-outline {
+  grid-column: 1/4;
+  grid-row: 10/12;
+  animation-name: slideup;
+  animation-duration: 1s;
+}
+.svg-x-solid {
+  grid-column: 1/4;
+  grid-row: 10/12;
+  z-index: -1;
+  animation: moveLeftRight 5s ease-out infinite;
+}

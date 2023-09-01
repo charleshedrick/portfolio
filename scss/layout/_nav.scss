@@ -4,8 +4,9 @@
 
 .nav-link {
   color: var(--black);
-  font-size: var(--fs-24);
-  font-weight: 1000;
+  font-size: var(--fs-28);
+  text-transform: uppercase;
+  font-weight: 700;
   transition: color var(--transition);
 
   &:hover {
@@ -25,7 +26,7 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  background-color: var(--white); //light/dark theme here
+  background-color: var(--primary-color); //light/dark theme here
 }
 
 .nav.show {
@@ -46,7 +47,7 @@
 @media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
   .nav-link {
     //margin-top: 20px;
-    font-size: var(--fs-32);
+    font-size: var(--fs-28);
   }
 }
 

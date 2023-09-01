@@ -1,11 +1,10 @@
-// adjusts color
 .header-icon {
   color: var(--white);
   transition: color var(--transition);
+}
 
-  &:hover {
-    color: var(--secondary-color);
-  }
+.header-icon:hover {
+  color: var(--secondary-color);
 }
 
 .toggler-icon {
@@ -13,8 +12,30 @@
   font-size: var(--fs-24);
   padding: 10px 20px 10px 10px;
   transition: color var(--transition);
+}
 
-  &:hover {
-    color: var(--secondary-color);
-  }
+.toggler-icon:hover {
+  color: var(--secondary-color);
+}
+
+.arrow-down {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: var(--fs-36);
+  animation-name: slidedown;
+  animation-duration: 1.5s;
+
+  z-index: 3;
+}
+
+.arrow-up {
+  position: fixed;
+  right: 20px;
+  bottom: 70px;
+  font-size: var(--fs-36);
+  animation-name: slideDownSmall;
+  animation-duration: 1.5s;
+
+  z-index: 3;
 }

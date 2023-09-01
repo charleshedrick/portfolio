@@ -15,7 +15,7 @@
     <header class="header">
         <div class="brand-and-toggler">
           <a href="index.html" class="navbar-brand hide-mobile">charles.hedrick</a>
-          <div class="header-buttons">
+          <div class="header-button-container">
             <a href="https://www.linkedin.com/in/charles-hedrick-43118334/"  target="_blank" title="linkedin"><i class="bi bi-linkedin header-icon "></i></a>
             
             <a href="https://github.com/charleshedrick" target="_blank"
@@ -24,13 +24,11 @@
             
             <a href="https://www.instagram.com/charleshedrick/" target="_blank"><i class="bi bi-instagram header-icon" title="instagram"></i></a>
             
-            <a href="mailto:hedrickcharles@gmail.com"><i class="bi bi-envelope-fill header-icon"></i></a>
-            <i
-              class="bi bi-sun-fill header-icon"
-              id="theme-toggle-button"
-              title="darkmode switch"
-            ></i>
+            <a href="mailto:hedrickcharles@gmail.com"><i class="bi bi-mailbox header-icon"></i></a>
             
+            <button id="theme-toggle-button" title="darkmode switch">
+            </button>
+                      
             <button type="button" class="navbar-toggler toggle" id="navbar-toggler">
               <i class="bi bi-list toggler-icon"></i>
             </button>
@@ -59,36 +57,49 @@
             </li>
           </ul>
       </div>
+      
     </header>
-
+    
     <!-- Main Content -->
     <main id="main">
+      <button class="arrow-down" data-scroll-target="section2">
+        <i class="bi bi-arrow-down-circle-fill"></i>
+    </button>
+    <button id="scrollToTop" class="arrow-up">
+      <i class="bi bi-arrow-up-circle-fill"></i>
+  </button>
+  
       <!-- Hero Section -->
-      <section class="wrapper welcome-text-wrapper">
-          <h1 class="banner-title"><i class="bi bi-emoji-smile"></i> Hi, I'm</h1>
+      <section id="section1" class="wrapper section welcome-text-wrapper">
+        <div class="hero-portrait-border"><img class="hero-portrait" src="images/portrait.png" alt="portrait"></div>
+        <div class="hero-text-container">
+          <h1 class="banner-title">Hi, I'm</h1>
           <h2 class="banner-title">Charles Hedrick</h2>
-          <p>A front end developer based out of Jacksonville, Florida</p>
-      </section>
+          <p>Front End Web Developer based out of Jacksonville, Florida</p>
+        </div>
+        <p class="hero-detail-text">
+          Proficient in HTML, CSS, JavaScript, PHP, and MySQL, I specialize in crafting visually engaging and user-centered websites that leverage over ten years of fine art and digital design experience.
+        </p>
+        <div class="typography-text">Aa</div>
+        <div class="svg-circle"><object data="svg/circle.svg" type="image/svg+xml"></object></div>
+        <div class="svg-circle-top-split"><object data="svg/circle_split_large.svg" type="image/svg+xml"></object></div>
+        <div class="svg-circle-bottom-split"><object data="svg/circle_split_small.svg" type="image/svg+xml"></object></div>
+        <div class="svg-dot-matrix"><object data="svg/dot_matrix.svg" type="image/svg+xml"></object></div>
+        <div class="svg-dot-matrix"><object data="svg/dot_matrix.svg" type="image/svg+xml"></object></div>
+        <div class="svg-x-outline"><object data="svg/x_outline.svg" type="image/svg+xml"></object></div>
+        <div class="svg-x-solid"><object data="svg/x_solid.svg" type="image/svg+xml"></object></div>
+            </section>
 
       <!-- About Section -->
-      <section class="wrapper" id="about">
+      <section id="section2" class="wrapper section" id="about">
         <h2>About Me</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic
-          deserunt neque minima facilis minus eum laudantium magnam dolores
-          adipisci tempora voluptatum quae quibusdam cumque laborum perferendis
-          maxime dolorem odio, dicta eveniet. Fuga, a hic magni enim dicta
-          doloremque ipsum quam aliquid atque voluptatibus id eaque, optio eius
-          tempora. Dolorem, error. Consectetur esse provident blanditiis numquam
-          tempore laborum eius perspiciatis voluptas animi veniam? Consequuntur
-          dignissimos quia iste. Expedita accusamus mollitia, nisi iusto
-          possimus harum tempore voluptatem non natus minus doloremque, eaque
-          sapiente cumque. Ducimus sed deserunt nihil magnam. Assumenda!
+          Passionate Web Developer: With two years of web development experience, I've infused my artistic background into crafting captivating online experiences. Proficient in HTML, CSS, JavaScript, PHP, and MySQL, I specialize in crafting visually engaging and user-centered websites that leverage over ten years of fine art experience.
         </p>
       </section>
 
       <!-- Skills Section -->
-      <section class="wrapper" id="skills">
+      <section id="section3" class="wrapper section" id="skills">
         <h2>Skills</h2>
         <ul>
           <li>HTML5, CSS3, JavaScript</li>
@@ -99,13 +110,13 @@
       </section>
 
       <!-- Portfolio Section -->
-      <section class="wrapper" id="portfolio">
+      <section id="section4" class="wrapper section" id="portfolio">
         <h2>Portfolio</h2>
         <!-- Showcase your projects with images, descriptions, and links -->
       </section>
 
       <!-- Work Process Section -->
-      <section class="wrapper" id="process">
+      <section id="section5" class="wrapper section" id="process">
         <h2>Work Process</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
@@ -115,24 +126,27 @@
           ea commodi facere illo repellendus excepturi? Labore quas
           exercitationem incidunt. Quaerat illum nam incidunt eaque?
         </p>
+        <div class="svg-dot-matrix-work"><object data="svg/dot_matrix.svg" type="image/svg+xml"></object></div>
+
       </section>
 
       <!-- Testimonials Section -->
-      <section class="wrapper" id="testimonials">
+      <section id="section6" class="wrapper section" id="testimonials">
         <h2>Testimonials</h2>
         <!-- Include client testimonials or endorsements -->
       </section>
 
       <!-- Contact Section -->
-      <section class="wrapper" id="contact">
+      <section id="section7" class="wrapper section" id="contact">
         <h2>Contact</h2>
-        <p>Get in touch with me. Email: your@email.com</p>
+        <p>Get in touch with me.</p>
+        <p>hedrickcharles@gmail.com</p>
       </section>
     </main>
 
     <!-- Footer Section -->
     <footer>
-      <p>&copy; 2023 Your Name. All rights reserved.</p>
+      <p>&copy; 2023 Charles Hedrick. All rights reserved.</p>
     </footer>
 
     <script src="app.js"></script>

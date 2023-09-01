@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 100 100" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Layer-1" vectornator:layerName="Layer 1">
+<path d="M50 2.5C23.7665 2.5 2.5 23.7665 2.5 50C2.5 76.2335 23.7665 97.5 50 97.5C76.2335 97.5 97.5 76.2335 97.5 50C97.5 23.7665 76.2335 2.5 50 2.5ZM50 34C58.8366 34 66 41.1634 66 50C66 58.8366 58.8366 66 50 66C41.1634 66 34 58.8366 34 50C34 41.1634 41.1634 34 50 34Z" fill="#f7dca0" fill-rule="nonzero" opacity="1" stroke="#2f3139" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Curve 2"/>
+</g>
+<g id="Layer-3" vectornator:layerName="Layer 3">
+<path d="M68.1977 5.00003C62.8138 4.93244 56.5763 9.96529 51.8047 10.3323C46.8423 10.7139 43.0936 6.12528 38.2258 5.71972C35.0507 5.45519 32.8223 8.30867 30.8964 10.2341C28.8023 12.3277 25.4623 12.1549 24.5813 12.4259C21.6698 13.3215 18.4472 14.9784 16.7612 17.6273C14.2549 21.5648 14.0998 26.8061 11.7549 30.9087C10.3208 33.418 7.7444 35.0871 5.63621 36.9607C2.96165 39.3375 1.20249 43.9773 2.36417 47.4615C3.03166 49.4635 4.65142 50.8605 6.0943 52.3031C8.43203 54.6403 11.0497 57.4411 12.3439 60.514C13.6995 63.7328 10.9875 69.8952 12.6384 74.9732C13.5331 77.7255 17.0611 79.3902 19.2152 80.8615C24.6129 84.5484 28.7527 94.4306 35.1173 94.9609C38.9874 95.2833 42.4468 93.5497 45.9151 92.1148C49.3592 90.69 53.1528 89.2572 56.8764 88.8435C63.5208 88.1054 71.4011 93.4935 77.4575 89.3015C79.9184 87.5982 81.7695 84.9905 83.8707 82.8897C86.4883 80.2727 89.5602 79.1088 90.6766 75.2022C91.7319 71.5093 90.538 67.6269 91.3964 63.9489C92.7178 58.2872 96.7359 53.636 96.9916 47.756C97.1358 44.442 95.3959 40.813 93.4251 38.2365C92.5908 37.1456 91.594 36.1781 90.9711 34.9325C89.2376 31.4662 90.3168 27.1945 88.4189 23.7446C87.0847 21.3193 85.3967 19.4617 82.9873 18.0852C81.5645 17.2724 79.7099 16.7615 78.5046 15.6318C76.0129 13.2963 75.5625 9.48449 73.2039 7.12638C71.6841 5.60696 69.9923 5.02256 68.1977 5.00003ZM53.5716 29.4694C55.6932 29.6839 58.1198 30.647 60.2139 33.2641C61.5919 34.9863 63.0921 37.7987 64.4021 39.545C67.5433 43.7323 68.5903 41.6386 70.6844 45.8259C72.6151 49.6864 71.08 52.2229 70.6844 54.2004C69.9694 57.7746 74.2159 59.9678 70.5208 62.7385C68.2802 64.4186 65.9183 62.3476 63.4859 64.3742C60.7242 66.6751 59.2831 71.3365 55.3713 72.1599C53.7766 72.4955 51.887 70.1463 48.3691 70.5897C45.564 70.9431 41.8366 73.659 40.3853 73.403C36.8337 72.7764 36.7123 68.97 35.4445 66.4351C34.2555 64.0577 31.5326 63.4358 30.3729 60.972C29.1179 58.3058 30.8964 53.1536 30.8964 48.9663C30.8964 42.5988 28.6943 38.5648 29.9148 36.5681C33.1692 31.2438 36.7572 36.5902 40.5162 35.1287C43.4236 33.9983 45.7294 31.183 48.6963 30.1236C49.6334 29.789 51.45 29.2549 53.5716 29.4694Z" fill="#fed9d8" fill-rule="nonzero" opacity="1" stroke="#2f3139" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Curve 3"/>
+</g>
+<g id="Layer-4" vectornator:layerName="Layer 4">
+<path d="M78 23L80 28" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 1"/>
+<path d="M44 27L48 23" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 2"/>
+<path d="M32 19L33 26" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 3"/>
+<path d="M19 25L16 29" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 4"/>
+<path d="M15 45L20 47" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 5"/>
+<path d="M16 48L19 52" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 6"/>
+<path d="M21 74L23 67" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 7"/>
+<path d="M24 80L28 82" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 8"/>
+<path d="M42 75L39 79" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 9"/>
+<path d="M39 66L43 69" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 10"/>
+<path d="M58 76L61 71" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 11"/>
+<path d="M55 78L56 82" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 12"/>
+<path d="M68 84L72 79" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 13"/>
+<path d="M79 72L80 79" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 14"/>
+<path d="M85 49L90 48" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 15"/>
+<path d="M92 48L90 53" fill="none" opacity="1" stroke="#99e27b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 16"/>
+<path d="M37 24L35 30" fill="none" opacity="1" stroke="#99e27b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 17"/>
+<path d="M54 14L60 14" fill="none" opacity="1" stroke="#99e27b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 18"/>
+<path d="M73 15L76 20" fill="none" opacity="1" stroke="#99e27b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 19"/>
+<path d="M21 52L25 47" fill="none" opacity="1" stroke="#99e27b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 20"/>
+<path d="M7 47L11 51" fill="none" opacity="1" stroke="#99e27b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 21"/>
+<path d="M27 84L31 79" fill="none" opacity="1" stroke="#99e27b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 22"/>
+<path d="M51 80L51 86" fill="none" opacity="1" stroke="#99e27b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 23"/>
+<path d="M63 85L68 87" fill="none" opacity="1" stroke="#99e27b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 24"/>
+<path d="M82 65L86 69" fill="none" opacity="1" stroke="#99e27b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 25"/>
+<path d="M79 58L76 64" fill="none" opacity="1" stroke="#99e27b" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 26"/>
+<path d="M80 52L82 57" fill="none" opacity="1" stroke="#ffef5c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 27"/>
+<path d="M28 22L30 28" fill="none" opacity="1" stroke="#ffef5c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 28"/>
+<path d="M51 16L48 23" fill="none" opacity="1" stroke="#ffef5c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 29"/>
+<path d="M67 25L72 24" fill="none" opacity="1" stroke="#ffef5c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 30"/>
+<path d="M51 14L54 19" fill="none" opacity="1" stroke="#ffef5c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 31"/>
+<path d="M84 31L84 36" fill="none" opacity="1" stroke="#ffef5c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 32"/>
+<path d="M12.3439 60.514L19 57" fill="none" opacity="1" stroke="#ffef5c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 33"/>
+<path d="M18 63L23 65" fill="none" opacity="1" stroke="#ffef5c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 34"/>
+<path d="M34 77L37 83" fill="none" opacity="1" stroke="#ffef5c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 35"/>
+<path d="M46 80L47 85" fill="none" opacity="1" stroke="#ffef5c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 36"/>
+<path d="M30 85L34 90" fill="none" opacity="1" stroke="#ffef5c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 37"/>
+<path d="M64 68L63 72" fill="none" opacity="1" stroke="#ffef5c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 38"/>
+<path d="M76 77L80 79" fill="none" opacity="1" stroke="#ffb35c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 39"/>
+<path d="M51 20L53 24" fill="none" opacity="1" stroke="#ffb35c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 40"/>
+<path d="M72 13L70 17" fill="none" opacity="1" stroke="#ffb35c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 41"/>
+<path d="M88 57L87 62" fill="none" opacity="1" stroke="#ffb35c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 42"/>
+<path d="M44 90L48 87" fill="none" opacity="1" stroke="#ffb35c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 43"/>
+<path d="M18 54L22 58" fill="none" opacity="1" stroke="#ffb35c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 44"/>
+<path d="M23 44L26 41" fill="none" opacity="1" stroke="#ffb35c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 45"/>
+<path d="M14 33L13 38" fill="none" opacity="1" stroke="#ffb35c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 46"/>
+<path d="M5 44L8 40" fill="none" opacity="1" stroke="#ffb35c" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 47"/>
+<path d="M21 26L25 30" fill="none" opacity="1" stroke="#ffa867" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 48"/>
+<path d="M76 20L74 27" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 49"/>
+<path d="M72 35L77 29" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 50"/>
+<path d="M64 15L59 20" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 51"/>
+<path d="M21 29L23 38" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 52"/>
+<path d="M12 43L16 38" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 53"/>
+<path d="M24 69L32 69" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 54"/>
+<path d="M18 69L17 75" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 55"/>
+<path d="M37 89L43 84" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 56"/>
+<path d="M46 75L51 80" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 57"/>
+<path d="M68 66L70 73" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 58"/>
+<path d="M79 63L86 58" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 59"/>
+<path d="M76 53L79 58" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 60"/>
+<path d="M83 44L90 46" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 61"/>
+<path d="M80 43L75 45" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 62"/>
+<path d="M83 41L86 38" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 63"/>
+<path d="M35 11L35 18" fill="none" opacity="1" stroke="#fd7f81" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 64"/>
+<path d="M41 17L45 23" fill="none" opacity="1" stroke="#64b2ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 65"/>
+<path d="M30 18L28 22" fill="none" opacity="1" stroke="#64b2ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 66"/>
+<path d="M10 40L11 45" fill="none" opacity="1" stroke="#64b2ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 67"/>
+<path d="M14 33L20 35" fill="none" opacity="1" stroke="#64b2ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 68"/>
+<path d="M66 12L66 19" fill="none" opacity="1" stroke="#64b2ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 69"/>
+<path d="M56 24L62 27" fill="none" opacity="1" stroke="#64b2ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 70"/>
+<path d="M74 50L74 43" fill="none" opacity="1" stroke="#64b2ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 71"/>
+<path d="M82 44L81 48" fill="none" opacity="1" stroke="#64b2ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 72"/>
+<path d="M74 70L80 68" fill="none" opacity="1" stroke="#64b2ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 73"/>
+<path d="M64 75L72 76" fill="none" opacity="1" stroke="#64b2ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 74"/>
+<path d="M61 75L65 80" fill="none" opacity="1" stroke="#64b2ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 75"/>
+<path d="M34 90L35 83" fill="none" opacity="1" stroke="#64b2ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 76"/>
+<path d="M30 72L34 77" fill="none" opacity="1" stroke="#64b2ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 77"/>
+<path d="M23 61L25 55" fill="none" opacity="1" stroke="#64b2ff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="1.53739" vectornator:layerName="Line 78"/>
+</g>
+</svg>
