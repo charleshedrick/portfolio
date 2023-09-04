@@ -1,12 +1,12 @@
 /* Primary Colors */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 :root {
   --primary-color: hsl(170, 97%, 76%);
   --secondary-color: hsl(7, 58%, 60%);
   --tertiary-color: hsl(69, 89%, 81%);
   --dark-color: hsl(221, 98%, 66%);
   --black: hsl(280, 3%, 23%);
-  --white: hsl(53, 19%, 91%);
+  --white: hsl(35, 20%, 74%);
   --success-color: #6bd684;
   --warning-color: #ffd863;
   --error-color: #dc3545;
@@ -202,7 +202,7 @@ img {
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header-icon {
@@ -241,8 +241,15 @@ body {
   bottom: 70px;
   font-size: var(--fs-36);
   animation-name: slideDownSmall;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
   z-index: 3;
+}
+
+.hero-image {
+  height: 500px;
+  width: auto;
+  grid-column: 6/13;
+  grid-row: 3/12;
 }
 
 .svg-circle {
@@ -299,6 +306,7 @@ body {
 
 body {
   line-height: 1.56;
+  background-color: var(--white);
   color: var(--black);
 }
 
@@ -426,9 +434,9 @@ header {
 }
 .welcome-text-wrapper {
   display: grid;
-  grid-template-columns: repeat(12, 1fr); /* Three equal-width columns */
-  grid-template-rows: repeat(12, 1fr); /* Rows adjust to content height */
-  gap: 10px; /* Gap between grid items */
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 10px;
   height: 100vh;
 }
 .welcome-text-wrapper p {
@@ -498,6 +506,11 @@ header {
 
 .hero-detail-text {
   font-size: var(--fs-20);
+  grid-column: 4/9;
+  grid-row: 11;
+}
+
+.svg-graphic-rectangle {
   grid-column: 4/9;
   grid-row: 11;
 }
@@ -666,7 +679,7 @@ header {
   --tertiary-color: hsl(69, 89%, 81%);
   --dark-color: hsl(221, 98%, 66%);
   --black: hsl(280, 3%, 23%);
-  --white: hsl(53, 19%, 91%);
+  --white: hsl(35, 20%, 74%);
   --success-color: #6bd684;
   --warning-color: #ffd863;
   --error-color: #dc3545;

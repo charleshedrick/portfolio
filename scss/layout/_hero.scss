@@ -1,8 +1,8 @@
 .welcome-text-wrapper {
   display: grid;
-  grid-template-columns: repeat(12, 1fr); /* Three equal-width columns */
-  grid-template-rows: repeat(12, 1fr); /* Rows adjust to content height */
-  gap: 10px; /* Gap between grid items */
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 10px;
   height: 100vh;
 
   p {
@@ -73,6 +73,11 @@
 
 .hero-detail-text {
   font-size: var(--fs-20);
+  grid-column: 4/9;
+  grid-row: 11;
+}
+
+.svg-graphic-rectangle {
   grid-column: 4/9;
   grid-row: 11;
 }
