@@ -23,6 +23,14 @@ h2 {
   height: 100vh;
 }
 
+.section {
+  min-height: 890px;
+}
+
+.dot-grid {
+  //overflow: hidden;
+}
+
 // MOBILE
 @media (max-width: $mobile-breakpoint) {
   .wrapper {

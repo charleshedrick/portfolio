@@ -7,10 +7,10 @@
   font-size: var(--fs-28);
   text-transform: uppercase;
   font-weight: 700;
-  transition: color var(--transition);
+  transition: border-bottom 0.2s ease-in-out;
 
   &:hover {
-    color: var(--secondary-color);
+    border-bottom: 4px solid var(--secondary-color);
   }
 }
 

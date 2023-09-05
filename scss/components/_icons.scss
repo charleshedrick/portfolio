@@ -27,6 +27,11 @@
   animation-duration: 1.5s;
 
   z-index: 3;
+
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: scale(108%);
+  }
 }
 
 .arrow-up {
@@ -38,4 +43,9 @@
   animation-duration: 0.5s;
 
   z-index: 3;
+
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: scale(108%);
+  }
 }

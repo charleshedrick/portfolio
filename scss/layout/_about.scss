@@ -1,0 +1,21 @@
+.about-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 10px;
+  height: 100vh;
+}
+
+.dot-grid-about {
+  position: absolute;
+  grid-column: 1/13;
+  grid-row: 1/11;
+
+  width: 80vw;
+  min-width: 1200px;
+  height: auto;
+  z-index: -4;
+}
+.hero-3Dtext-about {
+  width: 50vw;
+}
