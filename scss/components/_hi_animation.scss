@@ -1,0 +1,129 @@
+// :root {
+//   --hi-0-width: 184px;
+//   --hi-0-height: 394px;
+//   --hi-1-width: 103px;
+//   --hi-1-height: 170px;
+//   --hi-2-width: 191px;
+//   --hi-2-height: 410px;
+//   --hi-3-width: 191px;
+//   --hi-3-height: 410px;
+//   --hi-4-width: 819px;
+//   --hi-4-height: 627px;
+//   --hi-5-width: 481px;
+//   --hi-5-height: 306px;
+//   --hi-6-width: 191px;
+//   --hi-6-height: 130px;
+// }
+
+:root {
+  --hi-0-width: 128.8px; /* 184px * 0.7 */
+  --hi-0-height: 275.8px; /* 394px * 0.7 */
+  --hi-1-width: 72.1px; /* 103px * 0.7 */
+  --hi-1-height: 119px; /* 170px * 0.7 */
+  --hi-2-width: 133.7px; /* 191px * 0.7 */
+  --hi-2-height: 287px; /* 410px * 0.7 */
+  --hi-3-width: 133.7px; /* 191px * 0.7 */
+  --hi-3-height: 287px; /* 410px * 0.7 */
+  --hi-4-width: 573.3px; /* 819px * 0.7 */
+  --hi-4-height: 438.9px; /* 627px * 0.7 */
+  --hi-5-width: 336.7px; /* 481px * 0.7 */
+  --hi-5-height: 214.2px; /* 306px * 0.7 */
+  --hi-6-width: 133.7px; /* 191px * 0.7 */
+  --hi-6-height: 91px; /* 130px * 0.7 */
+}
+
+.hi-container-wrapper {
+  height: 100vh;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hi-container {
+  /*position: absolute;*/
+  right: 10%;
+  min-width: 500px;
+  min-height: 600px;
+  animation: none;
+}
+
+.hi-0,
+.hi-1,
+.hi-2,
+.hi-3,
+.hi-4,
+.hi-5,
+.hi-6 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 0;
+}
+
+.hi-0 {
+  animation-duration: 1.5s;
+  animation-name: slideLeft;
+  top: 25px;
+  left: 705px;
+  width: var(--hi-0-width);
+  height: var(--hi-0-height);
+}
+
+.hi-1 {
+  animation-duration: 19s;
+  animation-name: moveLeftRight;
+  animation-iteration-count: infinite;
+  top: 290px;
+  left: 835px;
+  width: var(--hi-1-width);
+  height: var(--hi-1-height);
+}
+
+.hi-2 {
+  animation-duration: 1.5s;
+  animation-name: slideDown;
+  top: 83px;
+  left: 600px;
+  width: var(--hi-2-width);
+  height: var(--hi-2-height);
+}
+
+.hi-3 {
+  animation-duration: 19s;
+  animation-name: moveUpDownBig;
+  animation-iteration-count: infinite;
+  top: 83px;
+  left: 600px;
+  width: var(--hi-3-width);
+  height: var(--hi-3-height);
+}
+
+.hi-4 {
+  animation-duration: 1.5s;
+  animation-name: slideRight;
+  top: 50px;
+  left: 100px;
+  width: var(--hi-4-width);
+  height: var(--hi-4-height);
+}
+
+.hi-5 {
+  /* animation-duration: 12s;
+  animation-name: moveUpDownBig;
+  animation-iteration-count: infinite; */
+  top: 473px;
+  left: 428px;
+  width: var(--hi-5-width);
+  height: var(--hi-5-height);
+}
+
+.hi-6 {
+  animation-duration: 6s;
+  animation-name: moveUpDown;
+  animation-iteration-count: infinite;
+  top: 225px;
+  left: 325px;
+  width: var(--hi-6-width);
+  height: var(--hi-6-height);
+}

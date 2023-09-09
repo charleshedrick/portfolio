@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   width: 60vw;
+  height: 100%;
   z-index: -1;
 }
 
@@ -80,7 +81,7 @@
   animation-name: slideUp;
   //background-color: var(--white);
   border-radius: 50%;
-  height: 250px;
+  min-height: 250px;
   justify-content: center;
   outline: 2px solid var(--dark-color);
   overflow: hidden;
@@ -96,7 +97,7 @@
 
 .hero-portrait {
   clip-path: circle(50%);
-  height: 250px;
+  min-height: 250px;
   width: auto;
   z-index: 1;
 }

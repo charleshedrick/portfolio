@@ -8,12 +8,16 @@
   --black: hsl(280, 3%, 23%);
   --white: hsl(60, 17%, 83%);
   --container-white: hsl(40, 11%, 95%);
+  --button-color: var(--secondary-color);
+  --button-active: hsl(7, 62%, 58%);
   --success-color: #6bd684;
   --warning-color: #ffd863;
   --error-color: #dc3545;
   --body-bg: var(--black);
   --text-color: var(--white);
   --nav: var(--white);
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
   --fs-18: 1.125rem;
   --fs-20: 1.25rem;
   --fs-24: 1.5rem;
@@ -232,24 +236,138 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
-.header-icon {
-  color: var(--white);
-  transition: color var(--transition);
+.click-transition {
+  transition: transform 0.2s ease-in-out, color 0.2s ease;
+}
+.click-transition:hover {
+  color: var(--button-color);
+  transform: translateY(-0.5px);
+}
+.click-transition:active {
+  transform: translateY(0.5px);
 }
 
-.header-icon:hover {
-  color: var(--secondary-color);
+:root {
+  --hi-0-width: 128.8px; /* 184px * 0.7 */
+  --hi-0-height: 275.8px; /* 394px * 0.7 */
+  --hi-1-width: 72.1px; /* 103px * 0.7 */
+  --hi-1-height: 119px; /* 170px * 0.7 */
+  --hi-2-width: 133.7px; /* 191px * 0.7 */
+  --hi-2-height: 287px; /* 410px * 0.7 */
+  --hi-3-width: 133.7px; /* 191px * 0.7 */
+  --hi-3-height: 287px; /* 410px * 0.7 */
+  --hi-4-width: 573.3px; /* 819px * 0.7 */
+  --hi-4-height: 438.9px; /* 627px * 0.7 */
+  --hi-5-width: 336.7px; /* 481px * 0.7 */
+  --hi-5-height: 214.2px; /* 306px * 0.7 */
+  --hi-6-width: 133.7px; /* 191px * 0.7 */
+  --hi-6-height: 91px; /* 130px * 0.7 */
+}
+
+.hi-container-wrapper {
+  height: 100vh;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hi-container {
+  /*position: absolute;*/
+  right: 10%;
+  min-width: 500px;
+  min-height: 600px;
+  animation: none;
+}
+
+.hi-0,
+.hi-1,
+.hi-2,
+.hi-3,
+.hi-4,
+.hi-5,
+.hi-6 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 0;
+}
+
+.hi-0 {
+  animation-duration: 1.5s;
+  animation-name: slideLeft;
+  top: 25px;
+  left: 705px;
+  width: var(--hi-0-width);
+  height: var(--hi-0-height);
+}
+
+.hi-1 {
+  animation-duration: 19s;
+  animation-name: moveLeftRight;
+  animation-iteration-count: infinite;
+  top: 290px;
+  left: 835px;
+  width: var(--hi-1-width);
+  height: var(--hi-1-height);
+}
+
+.hi-2 {
+  animation-duration: 1.5s;
+  animation-name: slideDown;
+  top: 83px;
+  left: 600px;
+  width: var(--hi-2-width);
+  height: var(--hi-2-height);
+}
+
+.hi-3 {
+  animation-duration: 19s;
+  animation-name: moveUpDownBig;
+  animation-iteration-count: infinite;
+  top: 83px;
+  left: 600px;
+  width: var(--hi-3-width);
+  height: var(--hi-3-height);
+}
+
+.hi-4 {
+  animation-duration: 1.5s;
+  animation-name: slideRight;
+  top: 50px;
+  left: 100px;
+  width: var(--hi-4-width);
+  height: var(--hi-4-height);
+}
+
+.hi-5 {
+  /* animation-duration: 12s;
+  animation-name: moveUpDownBig;
+  animation-iteration-count: infinite; */
+  top: 473px;
+  left: 428px;
+  width: var(--hi-5-width);
+  height: var(--hi-5-height);
+}
+
+.hi-6 {
+  animation-duration: 6s;
+  animation-name: moveUpDown;
+  animation-iteration-count: infinite;
+  top: 225px;
+  left: 325px;
+  width: var(--hi-6-width);
+  height: var(--hi-6-height);
+}
+
+.header-icon {
+  color: var(--white);
 }
 
 .toggler-icon {
   color: var(--white);
   font-size: var(--fs-24);
   padding: 10px 20px 10px 10px;
-  transition: color var(--transition);
-}
-
-.toggler-icon:hover {
-  color: var(--secondary-color);
 }
 
 .arrow-down {
@@ -260,10 +378,6 @@ body {
   animation-name: slidedown;
   animation-duration: 1.5s;
   z-index: 3;
-  transition: transform 0.2s ease;
-}
-.arrow-down:hover {
-  transform: scale(108%);
 }
 
 .arrow-up {
@@ -274,62 +388,6 @@ body {
   animation-name: slideDownSmall;
   animation-duration: 0.5s;
   z-index: 3;
-  transition: transform 0.2s ease;
-}
-.arrow-up:hover {
-  transform: scale(108%);
-}
-
-.svg-circle {
-  width: 200px;
-  height: 200px;
-  grid-column: 10/13;
-  grid-row: 9/12;
-  animation-name: slideup;
-  animation-duration: 1s;
-  animation: moveUpDown 2s ease-in-out infinite;
-}
-
-.svg-circle-top-split {
-  grid-column: 6/10;
-  grid-row: 2/5;
-  animation: spinright 10s linear infinite;
-}
-
-.svg-circle-bottom-split {
-  grid-column: 6/10;
-  grid-row: 2/5;
-  animation: spinleft 10s linear infinite;
-}
-
-.svg-dot-matrix {
-  grid-column: 10/14;
-  grid-row: 3/8;
-  z-index: -1;
-  animation-name: slidedown;
-  animation-duration: 2s;
-}
-
-.svg-dot-matrix-work {
-  z-index: -1;
-  height: 400px;
-  width: 200px;
-  animation-name: slidedown;
-  animation-duration: 2s;
-}
-
-.svg-x-outline {
-  grid-column: 1/4;
-  grid-row: 10/12;
-  animation-name: slideup;
-  animation-duration: 1s;
-}
-
-.svg-x-solid {
-  grid-column: 1/4;
-  grid-row: 10/12;
-  z-index: -1;
-  animation: moveLeftRight 5s ease-out infinite;
 }
 
 html,
@@ -383,8 +441,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 280px;
 }
 
 .navbar-brand {
@@ -395,14 +452,9 @@ header {
   animation: slideleft;
   animation-duration: 0.9s;
 }
-.navbar-brand:hover {
-  color: var(--secondary-color);
-}
 
 .contact-text {
   color: var(--white);
-  padding: 0 15px;
-  border-right: 1px solid var(--white);
 }
 
 @media (max-width: 480px) {
@@ -459,6 +511,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 60vw;
+  height: 100%;
   z-index: -1;
 }
 
@@ -521,7 +574,7 @@ header {
   animation-duration: 1.5s;
   animation-name: slideUp;
   border-radius: 50%;
-  height: 250px;
+  min-height: 250px;
   justify-content: center;
   outline: 2px solid var(--dark-color);
   overflow: hidden;
@@ -537,87 +590,9 @@ header {
 .hero-portrait {
   -webkit-clip-path: circle(50%);
           clip-path: circle(50%);
-  height: 250px;
+  min-height: 250px;
   width: auto;
   z-index: 1;
-}
-
-.hi-container-wrapper {
-  height: 100vh;
-  width: 60vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hi-container {
-  right: 10%;
-  min-width: 500px;
-  min-height: 600px;
-  animation: none;
-}
-
-.hi-0,
-.hi-1,
-.hi-2,
-.hi-3,
-.hi-4,
-.hi-5,
-.hi-6 {
-  position: absolute;
-  width: auto;
-  height: auto;
-  z-index: 0;
-}
-
-.hi-0 {
-  animation-duration: 1.5s;
-  animation-name: slideLeft;
-  top: 25px;
-  left: 705px;
-}
-
-.hi-1 {
-  animation-duration: 19s;
-  animation-name: moveLeftRight;
-  animation-iteration-count: infinite;
-  top: 290px;
-  left: 835px;
-}
-
-.hi-2 {
-  animation-duration: 1.5s;
-  animation-name: slideDown;
-  top: 83px;
-  left: 600px;
-}
-
-.hi-3 {
-  animation-duration: 19s;
-  animation-name: moveUpDownBig;
-  animation-iteration-count: infinite;
-  top: 83px;
-  left: 600px;
-}
-
-.hi-4 {
-  animation-duration: 1.5s;
-  animation-name: slideRight;
-  top: 50px;
-  left: 100px;
-}
-
-.hi-5 {
-  top: 473px;
-  left: 428px;
-}
-
-.hi-6 {
-  animation-duration: 6s;
-  animation-name: moveUpDown;
-  animation-iteration-count: infinite;
-  top: 225px;
-  left: 325px;
 }
 
 .nav-item {
@@ -629,11 +604,7 @@ header {
   color: var(--black);
   font-size: var(--fs-72);
   text-transform: uppercase;
-  letter-spacing: -2px;
-  transition: letter-spacing 0.2s ease-in-out;
-}
-.nav-link:hover {
-  letter-spacing: 8px;
+  letter-spacing: -4px;
 }
 
 .nav {
@@ -798,12 +769,16 @@ header {
   --black: hsl(280, 3%, 23%);
   --white: hsl(60, 17%, 83%);
   --container-white: hsl(40, 11%, 95%);
+  --button-color: var(--secondary-color);
+  --button-active: hsl(7, 62%, 58%);
   --success-color: #6bd684;
   --warning-color: #ffd863;
   --error-color: #dc3545;
   --body-bg: var(--black);
   --text-color: var(--white);
   --nav: var(--white);
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
   --fs-18: 1.125rem;
   --fs-20: 1.25rem;
   --fs-24: 1.5rem;

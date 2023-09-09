@@ -1,21 +1,11 @@
 .header-icon {
   color: var(--white);
-  transition: color var(--transition);
-}
-
-.header-icon:hover {
-  color: var(--secondary-color);
 }
 
 .toggler-icon {
   color: var(--white);
   font-size: var(--fs-24);
   padding: 10px 20px 10px 10px;
-  transition: color var(--transition);
-}
-
-.toggler-icon:hover {
-  color: var(--secondary-color);
 }
 
 .arrow-down {
@@ -27,11 +17,6 @@
   animation-duration: 1.5s;
 
   z-index: 3;
-
-  transition: transform 0.2s ease;
-  &:hover {
-    transform: scale(108%);
-  }
 }
 
 .arrow-up {
@@ -43,9 +28,4 @@
   animation-duration: 0.5s;
 
   z-index: 3;
-
-  transition: transform 0.2s ease;
-  &:hover {
-    transform: scale(108%);
-  }
 }

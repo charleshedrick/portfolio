@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: fit-content;
+  width: 280px;
 }
 
 .navbar-brand {
@@ -27,15 +27,12 @@ header {
   transition: color var(--transition);
   animation: slideleft;
   animation-duration: 0.9s;
-  &:hover {
-    color: var(--secondary-color);
-  }
 }
 
 .contact-text {
   color: var(--white);
-  padding: 0 15px;
-  border-right: 1px solid var(--white);
+  //padding: 0 15px;
+  //border-right: 1px solid var(--white);
 }
 
 // MOBILE
