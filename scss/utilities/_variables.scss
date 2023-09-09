@@ -7,7 +7,7 @@
   --dark-color: hsl(212, 100%, 72%);
 
   --black: hsl(280, 3%, 23%);
-  --white: hsl(208, 25%, 80%);
+  --white: hsl(60, 17%, 83%);
   --container-white: hsl(40, 11%, 95%);
 
   --success-color: #6bd684;
@@ -30,8 +30,10 @@
   --fs-64: 4rem;
   --fs-72: 4.5rem;
   --fs-88: 5.5rem;
+  --fs-96: 6rem;
 
   --container: 69.375rem; // 1110px
+  --hero-width: 358px; // width of 'developer' text
 
   --transition: 0.3s ease-in-out; //hover over transition
 }

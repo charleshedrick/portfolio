@@ -92,26 +92,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function scrollToSection(index) {
     if (index >= 0 && index < sections.length) {
-      sections[index].scrollIntoView({ behavior: "smooth" });
+      const section = sections[index];
+      const offsetTop = section.offsetTop;
+
+      // setTimeout to scroll smoothly
+      setTimeout(() => {
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth",
+        });
+      }, 10); // Delay scrolling for 100 milliseconds
       currentSection = index;
     }
   }
 
-  function toggleScrollToTopButton() {
-    scrollToTopButton.style.display =
-      window.scrollY >= sections[1].offsetTop ? "block" : "none";
-  }
+  // function toggleScrollToTopButton() {
+  //   scrollToTopButton.style.display =
+  //     window.scrollY >= sections[1].offsetTop ? "block" : "none";
+  // }
 
-  // Scrolling with mouse wheel
-  window.addEventListener("wheel", function (event) {
-    if (event.deltaY > 0 && currentSection < sections.length - 1) {
-      currentSection++;
-      scrollToSection(currentSection);
-    } else if (event.deltaY < 0 && currentSection > 0) {
-      currentSection--;
-      scrollToSection(currentSection);
-    }
-  });
+  // // Scrolling with mouse wheel
+  // window.addEventListener("wheel", function (event) {
+  //   if (event.deltaY > 0 && currentSection < sections.length - 1) {
+  //     currentSection++;
+  //     scrollToSection(currentSection);
+  //   } else if (event.deltaY < 0 && currentSection > 0) {
+  //     currentSection--;
+  //     scrollToSection(currentSection);
+  //   }
+  // });
 
   // Smooth scrolling with arrow buttons
   buttonUp.forEach((button) => {
@@ -132,3 +141,36 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", toggleScrollToTopButton);
   toggleScrollToTopButton(); // Initial call to set button visibility
 });
+
+// SCROLL ANIMATION //
+// Function to start the animation when scrolled 25% down the page
+function startAnimation() {
+  const animatedBox = document.getElementById("animatedBox");
+  const windowHeight = window.innerHeight;
+  const scrollThreshold = windowHeight * 0.05;
+  let animationStarted = false;
+
+  window.addEventListener("scroll", () => {
+    // Calculate scroll position
+    const scrollPosition = window.scrollY;
+    console.log(scrollPosition);
+
+    if (!animationStarted && scrollPosition >= scrollThreshold) {
+      // Add the animation property with the keyframes to start the animation
+      animatedBox.style.animation = "slideOut 1s ease forwards";
+      animationStarted = true;
+
+      // Remove the scroll event listener to prevent triggering the animation multiple times
+      window.removeEventListener("scroll", startAnimation);
+    }
+
+    if (animationStarted && scrollPosition < scrollThreshold) {
+      // User has scrolled back to the original position, reset the animation
+      animatedBox.style.animation = "slideIn 3s ease forwards"; // Remove the animation
+      animationStarted = false;
+    }
+  });
+}
+
+// Call the startAnimation function to set up the scroll-triggered animation
+startAnimation();

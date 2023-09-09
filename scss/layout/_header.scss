@@ -5,8 +5,9 @@ header {
 }
 
 .brand-and-toggler {
-  //overflow: hidden;
+  height: 40px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: var(--black);
   padding: 0 1rem;
@@ -16,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px;
+  width: fit-content;
 }
 
 .navbar-brand {
@@ -31,8 +32,9 @@ header {
   }
 }
 
-.bi-mailbox {
-  padding-right: 15px;
+.contact-text {
+  color: var(--white);
+  padding: 0 15px;
   border-right: 1px solid var(--white);
 }
 

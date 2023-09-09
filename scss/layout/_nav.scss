@@ -1,16 +1,17 @@
 .nav-item {
   padding-bottom: 30px;
+  font-family: "Oswald", sans-serif;
 }
 
 .nav-link {
   color: var(--black);
-  font-size: var(--fs-28);
+  font-size: var(--fs-72);
   text-transform: uppercase;
-  font-weight: 700;
-  transition: border-bottom 0.2s ease-in-out;
+  letter-spacing: -2px;
+  transition: letter-spacing 0.2s ease-in-out;
 
   &:hover {
-    border-bottom: 4px solid var(--secondary-color);
+    letter-spacing: 8px;
   }
 }
 
@@ -26,7 +27,7 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  background-color: var(--primary-color); //light/dark theme here
+  background-color: var(--tertiary-color); //light/dark theme here
 }
 
 .nav.show {

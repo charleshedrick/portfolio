@@ -1,5 +1,12 @@
+html,
+body {
+  scroll-behavior: smooth;
+  transition-duration: 0.5s;
+}
+
 body {
   //font-size: var(--fs-18);
+  font-weight: 500;
   line-height: 1.56;
   background-color: var(--white);
   color: var(--black);
@@ -16,44 +23,32 @@ h2 {
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
-}
-
-.section {
-  min-height: 890px;
-}
-
-.dot-grid {
-  //overflow: hidden;
 }
 
 // MOBILE
 @media (max-width: $mobile-breakpoint) {
   .wrapper {
-    width: calc(100% - 2rem);
-    max-width: var(--container);
-    margin-inline: auto;
+    //width: calc(100% - 2rem);
+    //max-width: var(--container);
+    //margin-inline: auto;
   }
 }
 
 // TABLET
 @media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
   .wrapper {
-    width: calc(100% - 3rem);
-    max-width: var(--container);
-    margin-inline: auto;
+    //width: calc(100% - 3rem);
+    // max-width: var(--container);
+    //margin-inline: auto;
   }
 }
 
 // DESKTOP
 @media (min-width: $tablet-breakpoint) {
   .wrapper {
-    width: calc(100% - 3rem);
-    max-width: var(--container);
-    margin-inline: auto;
+    //width: calc(100% - 3rem);
+    //max-width: var(--container);
+    //margin-inline: auto;
   }
 }

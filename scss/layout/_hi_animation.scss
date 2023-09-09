@@ -1,0 +1,89 @@
+// HI! CONTAINER //
+.hi-container-wrapper {
+  height: 100vh;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hi-container {
+  //position: absolute;
+  right: 10%;
+  min-width: 500px;
+  min-height: 600px;
+  animation: none;
+}
+
+.hi-0,
+.hi-1,
+.hi-2,
+.hi-3,
+.hi-4,
+.hi-5,
+.hi-6 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 0;
+}
+
+// ! solid
+.hi-0 {
+  animation-duration: 1.5s;
+  animation-name: slideLeft;
+  top: 25px;
+  left: 705px;
+}
+
+// cylinder outline
+.hi-1 {
+  animation-duration: 19s;
+  animation-name: moveLeftRight;
+  animation-iteration-count: infinite;
+  top: 290px;
+  left: 835px;
+}
+// I solid
+.hi-2 {
+  animation-duration: 1.5s;
+  animation-name: slideDown;
+  top: 83px;
+  left: 600px;
+}
+
+// I outline
+.hi-3 {
+  animation-duration: 19s;
+  animation-name: moveUpDownBig;
+  animation-iteration-count: infinite;
+  top: 83px;
+  left: 600px;
+}
+
+// H solid
+.hi-4 {
+  animation-duration: 1.5s;
+  animation-name: slideRight;
+  top: 50px;
+  left: 100px;
+}
+
+// H outline
+.hi-5 {
+  // animation-duration: 12s;
+  // animation-name: moveUpDownBig;
+  // animation-iteration-count: infinite;
+
+  top: 473px;
+  left: 428px;
+}
+
+// H top piece
+.hi-6 {
+  animation-duration: 6s;
+  animation-name: moveUpDown;
+  animation-iteration-count: infinite;
+  top: 225px;
+  left: 325px;
+}
