@@ -41,9 +41,8 @@
 }
 
 .hi-container {
-  /*position: absolute;*/
-  right: 10%;
-  min-width: 500px;
+  position: relative;
+  min-width: 600px;
   min-height: 600px;
   animation: none;
 }
@@ -61,15 +60,17 @@
   z-index: 0;
 }
 
+// ! text
 .hi-0 {
   animation-duration: 1.5s;
-  animation-name: slideLeft;
-  top: 25px;
-  left: 705px;
+  animation-name: slideUp;
+  top: 30px;
+  left: 385px;
   width: var(--hi-0-width);
   height: var(--hi-0-height);
 }
 
+// cylinder
 .hi-1 {
   animation-duration: 19s;
   animation-name: moveLeftRight;
@@ -80,50 +81,55 @@
   height: var(--hi-1-height);
 }
 
+// I solid
 .hi-2 {
-  animation-duration: 1.5s;
-  animation-name: slideDown;
-  top: 83px;
-  left: 600px;
+  animation-duration: 2s;
+  animation-name: slideUp;
+  top: 70px;
+  left: 310px;
   width: var(--hi-2-width);
   height: var(--hi-2-height);
 }
 
+// I outline
 .hi-3 {
   animation-duration: 19s;
   animation-name: moveUpDownBig;
   animation-iteration-count: infinite;
-  top: 83px;
-  left: 600px;
+  top: 70px;
+  left: 310px;
   width: var(--hi-3-width);
   height: var(--hi-3-height);
 }
 
+// H solid
 .hi-4 {
-  animation-duration: 1.5s;
-  animation-name: slideRight;
+  animation-duration: 2.5s;
+  animation-name: slideUp;
   top: 50px;
-  left: 100px;
+  left: -40px;
   width: var(--hi-4-width);
   height: var(--hi-4-height);
 }
 
+// H outline
 .hi-5 {
   /* animation-duration: 12s;
   animation-name: moveUpDownBig;
   animation-iteration-count: infinite; */
-  top: 473px;
-  left: 428px;
+  top: 346px;
+  left: 189px;
   width: var(--hi-5-width);
   height: var(--hi-5-height);
 }
 
+// H top
 .hi-6 {
   animation-duration: 6s;
   animation-name: moveUpDown;
   animation-iteration-count: infinite;
-  top: 225px;
-  left: 325px;
+  top: 172px;
+  left: 117px;
   width: var(--hi-6-width);
   height: var(--hi-6-height);
 }

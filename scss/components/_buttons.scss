@@ -1,5 +1,5 @@
 .click-transition {
-  transition: transform 0.2s ease-in-out, color 0.2s ease;
+  transition: transform 0.1s ease-in-out, color 0.2s ease;
 
   &:hover {
     color: var(--button-color);
@@ -8,6 +8,6 @@
 
   &:active {
     //color: var(--button-active);
-    transform: translateY(0.5px);
+    transform: translateY(0px);
   }
 }

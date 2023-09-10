@@ -4,11 +4,12 @@
 
 .toggler-icon {
   color: var(--white);
-  font-size: var(--fs-24);
+  font-size: var(--fs-28);
   padding: 10px 20px 10px 10px;
 }
 
 .arrow-down {
+  color: var(--secondary-color);
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -20,6 +21,7 @@
 }
 
 .arrow-up {
+  color: var(--secondary-color);
   position: fixed;
   right: 20px;
   bottom: 70px;

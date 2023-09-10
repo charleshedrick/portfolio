@@ -143,34 +143,92 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // SCROLL ANIMATION //
-// Function to start the animation when scrolled 25% down the page
-function startAnimation() {
-  const animatedBox = document.getElementById("animatedBox");
+// Function to start the animation when scrolled a certain percentage down the page
+function startScrollAnimation(
+  targetElementId,
+  animationIn,
+  animationOut,
+  thresholdPercentage
+) {
+  const animatedBox = document.getElementById(targetElementId);
   const windowHeight = window.innerHeight;
-  const scrollThreshold = windowHeight * 0.05;
+  const scrollThreshold = windowHeight * (thresholdPercentage / 100);
   let animationStarted = false;
 
-  window.addEventListener("scroll", () => {
+  function handleScroll() {
     // Calculate scroll position
     const scrollPosition = window.scrollY;
     console.log(scrollPosition);
-
     if (!animationStarted && scrollPosition >= scrollThreshold) {
       // Add the animation property with the keyframes to start the animation
-      animatedBox.style.animation = "slideOut 1s ease forwards";
+      animatedBox.style.animation = animationOut;
       animationStarted = true;
 
       // Remove the scroll event listener to prevent triggering the animation multiple times
-      window.removeEventListener("scroll", startAnimation);
+      window.removeEventListener("scroll", handleScroll);
+      // Add a new scroll listener to reset the animation
+      window.addEventListener("scroll", resetAnimation);
     }
+  }
+
+  function resetAnimation() {
+    const scrollPosition = window.scrollY;
 
     if (animationStarted && scrollPosition < scrollThreshold) {
       // User has scrolled back to the original position, reset the animation
-      animatedBox.style.animation = "slideIn 3s ease forwards"; // Remove the animation
+      animatedBox.style.animation = animationIn;
       animationStarted = false;
+
+      // Remove the reset scroll event listener
+      window.removeEventListener("scroll", resetAnimation);
+      // Reattach the main scroll listener
+      window.addEventListener("scroll", handleScroll);
     }
-  });
+  }
+
+  // Attach the main scroll listener
+  window.addEventListener("scroll", handleScroll);
 }
 
-// Call the startAnimation function to set up the scroll-triggered animation
-startAnimation();
+startScrollAnimation(
+  "hi-0",
+  "slideUp 3.5s ease forwards",
+  "slideOut 1s ease forwards",
+  10
+);
+startScrollAnimation(
+  "hi-1",
+  "slideUp 3s ease forwards",
+  "slideOut 1s ease forwards",
+  10
+);
+startScrollAnimation(
+  "hi-2",
+  "slideUp 3s ease forwards",
+  "slideOut 1s ease forwards",
+  10
+);
+startScrollAnimation(
+  "hi-3",
+  "slideUp 2.5s ease forwards",
+  "slideOut 1s ease forwards",
+  10
+);
+startScrollAnimation(
+  "hi-4",
+  "slideUp 2s ease forwards",
+  "slideOut 1s ease forwards",
+  10
+);
+startScrollAnimation(
+  "hi-5",
+  "slideUp 2s ease forwards",
+  "slideOut 1s ease forwards",
+  10
+);
+startScrollAnimation(
+  "hi-6",
+  "slideUp 2s ease forwards",
+  "slideOut 1s ease forwards",
+  10
+);

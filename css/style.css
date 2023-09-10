@@ -38,24 +38,38 @@
 
 @keyframes slideIn {
   0% {
-    transform: translateY(120%);
+    transform: translateY(-120%);
+    opacity: 0;
   }
   100% {
+    opacity: 1;
     transform: translateY(0%);
   }
 }
 @keyframes slideOut {
   0% {
     transform: translateY(0%);
+    opacity: 1;
   }
   100% {
-    transform: translateY(120%);
+    transform: translateY(-120%);
+    opacity: 0;
   }
 }
 @keyframes slideUp {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideUpBig {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
   }
   100% {
     opacity: 1;
@@ -237,14 +251,14 @@ body {
 }
 
 .click-transition {
-  transition: transform 0.2s ease-in-out, color 0.2s ease;
+  transition: transform 0.1s ease-in-out, color 0.2s ease;
 }
 .click-transition:hover {
   color: var(--button-color);
   transform: translateY(-0.5px);
 }
 .click-transition:active {
-  transform: translateY(0.5px);
+  transform: translateY(0px);
 }
 
 :root {
@@ -273,9 +287,8 @@ body {
 }
 
 .hi-container {
-  /*position: absolute;*/
-  right: 10%;
-  min-width: 500px;
+  position: relative;
+  min-width: 600px;
   min-height: 600px;
   animation: none;
 }
@@ -295,9 +308,9 @@ body {
 
 .hi-0 {
   animation-duration: 1.5s;
-  animation-name: slideLeft;
-  top: 25px;
-  left: 705px;
+  animation-name: slideUp;
+  top: 30px;
+  left: 385px;
   width: var(--hi-0-width);
   height: var(--hi-0-height);
 }
@@ -313,10 +326,10 @@ body {
 }
 
 .hi-2 {
-  animation-duration: 1.5s;
-  animation-name: slideDown;
-  top: 83px;
-  left: 600px;
+  animation-duration: 2s;
+  animation-name: slideUp;
+  top: 70px;
+  left: 310px;
   width: var(--hi-2-width);
   height: var(--hi-2-height);
 }
@@ -325,17 +338,17 @@ body {
   animation-duration: 19s;
   animation-name: moveUpDownBig;
   animation-iteration-count: infinite;
-  top: 83px;
-  left: 600px;
+  top: 70px;
+  left: 310px;
   width: var(--hi-3-width);
   height: var(--hi-3-height);
 }
 
 .hi-4 {
-  animation-duration: 1.5s;
-  animation-name: slideRight;
+  animation-duration: 2.5s;
+  animation-name: slideUp;
   top: 50px;
-  left: 100px;
+  left: -40px;
   width: var(--hi-4-width);
   height: var(--hi-4-height);
 }
@@ -344,8 +357,8 @@ body {
   /* animation-duration: 12s;
   animation-name: moveUpDownBig;
   animation-iteration-count: infinite; */
-  top: 473px;
-  left: 428px;
+  top: 346px;
+  left: 189px;
   width: var(--hi-5-width);
   height: var(--hi-5-height);
 }
@@ -354,8 +367,8 @@ body {
   animation-duration: 6s;
   animation-name: moveUpDown;
   animation-iteration-count: infinite;
-  top: 225px;
-  left: 325px;
+  top: 172px;
+  left: 117px;
   width: var(--hi-6-width);
   height: var(--hi-6-height);
 }
@@ -366,11 +379,12 @@ body {
 
 .toggler-icon {
   color: var(--white);
-  font-size: var(--fs-24);
+  font-size: var(--fs-28);
   padding: 10px 20px 10px 10px;
 }
 
 .arrow-down {
+  color: var(--secondary-color);
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -381,6 +395,7 @@ body {
 }
 
 .arrow-up {
+  color: var(--secondary-color);
   position: fixed;
   right: 20px;
   bottom: 70px;
@@ -510,7 +525,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60vw;
+  width: 50vw;
   height: 100%;
   z-index: -1;
 }
@@ -522,7 +537,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 40vw;
+  width: 50vw;
   height: 100vh;
   background-color: var(--black);
 }
@@ -645,24 +660,38 @@ header {
 }
 @keyframes slideIn {
   0% {
-    transform: translateY(120%);
+    transform: translateY(-120%);
+    opacity: 0;
   }
   100% {
+    opacity: 1;
     transform: translateY(0%);
   }
 }
 @keyframes slideOut {
   0% {
     transform: translateY(0%);
+    opacity: 1;
   }
   100% {
-    transform: translateY(120%);
+    transform: translateY(-120%);
+    opacity: 0;
   }
 }
 @keyframes slideUp {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideUpBig {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
   }
   100% {
     opacity: 1;
