@@ -11,3 +11,57 @@
     transform: translateY(0px);
   }
 }
+
+.grow-hover {
+  transition: transform 0.2s ease-in-out, color 0.2s ease;
+  &:hover {
+    color: var(--button-active);
+    transform: scale(106%);
+  }
+
+  &:active {
+    transform: scale(100%);
+  }
+}
+
+.toggler-icon {
+  color: var(--white);
+  font-size: var(--fs-28);
+  padding: 10px 20px 10px 10px;
+}
+
+.arrow-up {
+  color: var(--secondary-color);
+  position: fixed;
+  right: 20px;
+  bottom: 70px;
+  font-size: var(--fs-36);
+  z-index: 3;
+}
+
+.arrow-down {
+  color: var(--secondary-color);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: var(--fs-36);
+  z-index: 99;
+}
+
+.color-palette-wrapper {
+  display: flex;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3498db; /* Change this to your desired color */
+  transition: width 0.3s ease; /* Add a transition effect */
+  cursor: pointer;
+  z-index: 3;
+}
+
+.circle:hover {
+  width: 120px; /* Increase the width by 20px on hover */
+}

@@ -20,17 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const element = document.querySelector("body");
   const classList = element.classList;
   const classArray = Array.from(classList);
-  console.log(classArray);
 });
 
 const body = document.body;
-const header = document.querySelector("header"); // Select the header element
 
 function setTheme(theme) {
   body.classList.remove("light-theme", "dark-theme");
   body.classList.add(theme);
-  header.classList.remove("light-header", "dark-header");
-  header.classList.add(`${theme}-header`);
   document.cookie = `theme=${theme}; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/`;
 
   // Update the icon based on the theme
@@ -85,8 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
 // SCROLLING EFFECTS //
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll(".section");
-  const buttonUp = document.querySelectorAll(".arrow-up");
-  const buttonDown = document.querySelectorAll(".arrow-down");
+  const buttonUp = document.querySelectorAll("#scrollToTop i");
+  const buttonDown = document.querySelectorAll("button[data-scroll-target] i");
   const scrollToTopButton = document.getElementById("scrollToTop");
   let currentSection = 0;
 
@@ -101,26 +97,10 @@ document.addEventListener("DOMContentLoaded", function () {
           top: offsetTop,
           behavior: "smooth",
         });
-      }, 10); // Delay scrolling for 100 milliseconds
+      }, 0); // Delay scrolling
       currentSection = index;
     }
   }
-
-  // function toggleScrollToTopButton() {
-  //   scrollToTopButton.style.display =
-  //     window.scrollY >= sections[1].offsetTop ? "block" : "none";
-  // }
-
-  // // Scrolling with mouse wheel
-  // window.addEventListener("wheel", function (event) {
-  //   if (event.deltaY > 0 && currentSection < sections.length - 1) {
-  //     currentSection++;
-  //     scrollToSection(currentSection);
-  //   } else if (event.deltaY < 0 && currentSection > 0) {
-  //     currentSection--;
-  //     scrollToSection(currentSection);
-  //   }
-  // });
 
   // Smooth scrolling with arrow buttons
   buttonUp.forEach((button) => {
@@ -138,12 +118,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Show/hide "Up" button
+  function toggleScrollToTopButton() {
+    const scrollY = window.scrollY || document.documentElement.scrollTop;
+    const scrollTopButton = document.getElementById("scrollToTop");
+    const scrollThreshold = 500; // Adjustable value for start of scroll
+
+    if (scrollY > scrollThreshold) {
+      scrollTopButton.style.display = "block";
+    } else {
+      scrollTopButton.style.display = "none";
+    }
+  }
   window.addEventListener("scroll", toggleScrollToTopButton);
-  toggleScrollToTopButton(); // Initial call to set button visibility
 });
 
 // SCROLL ANIMATION //
-// Function to start the animation when scrolled a certain percentage down the page
 function startScrollAnimation(
   targetElementId,
   animationIn,
@@ -158,7 +147,7 @@ function startScrollAnimation(
   function handleScroll() {
     // Calculate scroll position
     const scrollPosition = window.scrollY;
-    console.log(scrollPosition);
+    //console.log(scrollPosition);
     if (!animationStarted && scrollPosition >= scrollThreshold) {
       // Add the animation property with the keyframes to start the animation
       animatedBox.style.animation = animationOut;

@@ -1,7 +1,7 @@
 /* Primary Colors */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Poiret+One&display=swap");
 :root {
-  --primary-color: hsl(170, 97%, 76%);
+  --primary-color: hsl(149, 57%, 68%);
   --secondary-color: hsl(7, 58%, 60%);
   --tertiary-color: hsl(44, 89%, 75%);
   --dark-color: hsl(212, 100%, 72%);
@@ -9,7 +9,7 @@
   --white: hsl(60, 17%, 83%);
   --container-white: hsl(40, 11%, 95%);
   --button-color: var(--secondary-color);
-  --button-active: hsl(7, 62%, 58%);
+  --button-active: hsl(21, 72%, 65%);
   --success-color: #6bd684;
   --warning-color: #ffd863;
   --error-color: #dc3545;
@@ -38,7 +38,7 @@
 
 @keyframes slideIn {
   0% {
-    transform: translateY(-120%);
+    transform: translateY(-140%);
     opacity: 0;
   }
   100% {
@@ -52,7 +52,7 @@
     opacity: 1;
   }
   100% {
-    transform: translateY(-120%);
+    transform: translateY(-140%);
     opacity: 0;
   }
 }
@@ -261,6 +261,59 @@ body {
   transform: translateY(0px);
 }
 
+.grow-hover {
+  transition: transform 0.2s ease-in-out, color 0.2s ease;
+}
+.grow-hover:hover {
+  color: var(--button-active);
+  transform: scale(106%);
+}
+.grow-hover:active {
+  transform: scale(100%);
+}
+
+.toggler-icon {
+  color: var(--white);
+  font-size: var(--fs-28);
+  padding: 10px 20px 10px 10px;
+}
+
+.arrow-up {
+  color: var(--secondary-color);
+  position: fixed;
+  right: 20px;
+  bottom: 70px;
+  font-size: var(--fs-36);
+  z-index: 3;
+}
+
+.arrow-down {
+  color: var(--secondary-color);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: var(--fs-36);
+  z-index: 99;
+}
+
+.color-palette-wrapper {
+  display: flex;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3498db; /* Change this to your desired color */
+  transition: width 0.3s ease; /* Add a transition effect */
+  cursor: pointer;
+  z-index: 3;
+}
+
+.circle:hover {
+  width: 120px; /* Increase the width by 20px on hover */
+}
+
 :root {
   --hi-0-width: 128.8px; /* 184px * 0.7 */
   --hi-0-height: 275.8px; /* 394px * 0.7 */
@@ -319,10 +372,11 @@ body {
   animation-duration: 19s;
   animation-name: moveLeftRight;
   animation-iteration-count: infinite;
-  top: 290px;
-  left: 835px;
+  top: 160px;
+  left: 490px;
   width: var(--hi-1-width);
   height: var(--hi-1-height);
+  z-index: -1;
 }
 
 .hi-2 {
@@ -377,34 +431,6 @@ body {
   color: var(--white);
 }
 
-.toggler-icon {
-  color: var(--white);
-  font-size: var(--fs-28);
-  padding: 10px 20px 10px 10px;
-}
-
-.arrow-down {
-  color: var(--secondary-color);
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  font-size: var(--fs-36);
-  animation-name: slidedown;
-  animation-duration: 1.5s;
-  z-index: 3;
-}
-
-.arrow-up {
-  color: var(--secondary-color);
-  position: fixed;
-  right: 20px;
-  bottom: 70px;
-  font-size: var(--fs-36);
-  animation-name: slideDownSmall;
-  animation-duration: 0.5s;
-  z-index: 3;
-}
-
 html,
 body {
   scroll-behavior: smooth;
@@ -419,6 +445,8 @@ body {
 }
 
 body.dark-theme {
+  font-weight: 500;
+  line-height: 1.56;
   background-color: var(--black);
   color: var(--white);
 }
@@ -523,6 +551,7 @@ header {
 
 .left-hero {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 50vw;
@@ -540,13 +569,13 @@ header {
   width: 50vw;
   height: 100vh;
   background-color: var(--black);
+  color: var(--white);
 }
 
 .hero-text-container {
   height: -moz-fit-content;
   height: fit-content;
   width: var(--hero-width);
-  color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -610,6 +639,12 @@ header {
   z-index: 1;
 }
 
+.dot-grid {
+  height: 850px;
+  position: absolute;
+  z-index: -2;
+}
+
 .nav-item {
   padding-bottom: 30px;
   font-family: "Oswald", sans-serif;
@@ -660,7 +695,7 @@ header {
 }
 @keyframes slideIn {
   0% {
-    transform: translateY(-120%);
+    transform: translateY(-140%);
     opacity: 0;
   }
   100% {
@@ -674,7 +709,7 @@ header {
     opacity: 1;
   }
   100% {
-    transform: translateY(-120%);
+    transform: translateY(-140%);
     opacity: 0;
   }
 }
@@ -791,7 +826,7 @@ header {
 }
 /* Primary Colors */
 :root {
-  --primary-color: hsl(170, 97%, 76%);
+  --primary-color: hsl(149, 57%, 68%);
   --secondary-color: hsl(7, 58%, 60%);
   --tertiary-color: hsl(44, 89%, 75%);
   --dark-color: hsl(212, 100%, 72%);
@@ -799,7 +834,7 @@ header {
   --white: hsl(60, 17%, 83%);
   --container-white: hsl(40, 11%, 95%);
   --button-color: var(--secondary-color);
-  --button-active: hsl(7, 62%, 58%);
+  --button-active: hsl(21, 72%, 65%);
   --success-color: #6bd684;
   --warning-color: #ffd863;
   --error-color: #dc3545;

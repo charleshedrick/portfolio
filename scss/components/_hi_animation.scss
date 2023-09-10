@@ -75,10 +75,11 @@
   animation-duration: 19s;
   animation-name: moveLeftRight;
   animation-iteration-count: infinite;
-  top: 290px;
-  left: 835px;
+  top: 160px;
+  left: 490px;
   width: var(--hi-1-width);
   height: var(--hi-1-height);
+  z-index: -1;
 }
 
 // I solid

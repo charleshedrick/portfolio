@@ -13,6 +13,8 @@ body {
 }
 
 body.dark-theme {
+  font-weight: 500;
+  line-height: 1.56;
   background-color: var(--black);
   color: var(--white);
 }
