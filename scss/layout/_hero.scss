@@ -110,9 +110,13 @@
 @media (max-width: $mobile-breakpoint) {
   .hero-wrapper {
     //min-width: 600px;
-    height: 200vh;
+    height: fit-content;
     width: 100vw;
     flex-direction: column;
+  }
+
+  .hero-portrait-border {
+    margin-top: 10vh;
   }
   // "hi!" TEXT SECTION //
   .right-hero {
@@ -122,29 +126,23 @@
   // HERO TEXT SECTION //
   #left-hero {
     width: 90vw;
+    height: fit-content;
   }
 
   .hero-text-container {
     height: fit-content;
     width: 80vw;
-    //color: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: center;
 
     h1 {
-      font-family: "Oswald", sans-serif;
       font-size: var(--fs-72);
-      text-transform: uppercase;
-      letter-spacing: -4px;
-      line-height: 1;
-      font-weight: 300;
+      //letter-spacing: -4px;
+      font-weight: 400;
     }
 
     p {
       width: fit-content;
-      text-align: justify;
+      font-weight: 500;
+      margin-bottom: 30px;
     }
   }
 }

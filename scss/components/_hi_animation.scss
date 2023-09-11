@@ -197,8 +197,8 @@
 @media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
   .hi-container {
     position: relative;
-    //min-width: 300px;
-    //min-height: 300px;
+    min-width: 300px;
+    min-height: 300px;
     animation: none;
   }
 
