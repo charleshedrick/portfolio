@@ -13,8 +13,7 @@
 .nav {
   opacity: 0;
   visibility: hidden;
-  position: absolute;
-
+  //position: absolute;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   height: 100vh;
   width: 100vw;
@@ -36,13 +35,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    //outline: 1px solid red;
+    //min-width: 100vw;
   }
 }
 
 // TABLET
 @media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
   .nav-link {
-    //margin-top: 20px;
     font-size: var(--fs-28);
   }
 }

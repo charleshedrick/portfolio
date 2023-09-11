@@ -2,10 +2,10 @@ header {
   position: fixed;
   z-index: 9999;
   width: 100vw;
+  height: 50px;
 }
 
 .brand-and-toggler {
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,41 +31,24 @@ header {
 
 .contact-text {
   color: var(--white);
-  //padding: 0 15px;
-  //border-right: 1px solid var(--white);
 }
 
+#theme-toggle-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mode-text {
+  padding-left: 4px;
+}
 // MOBILE
 @media (max-width: $mobile-breakpoint) {
   .navbar-brand {
-    font-size: var(--fs-18);
+    font-size: var(--fs-20);
   }
-  .hide-mobile {
-    display: none;
-  }
-
-  .header-buttons {
-    display: flex;
-    width: 100vw;
-    height: 50px;
-    justify-content: center;
-  }
-  .header-icon {
-    padding: 10px;
-    margin: 0;
-    font-size: 1.5rem;
-  }
-  .bi-envelope-fill {
-    border-right: none;
-  }
-  .navbar-toggler {
-    position: absolute;
-    right: 0;
-  }
-  #theme-toggle-button {
-    position: absolute;
-    left: 0;
-    padding: 20px;
+  .header-button-container {
+    width: 40vw;
   }
 }
 

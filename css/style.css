@@ -284,7 +284,6 @@ body {
 .toggler-icon {
   color: var(--white);
   font-size: var(--fs-28);
-  padding: 10px 20px 10px 10px;
 }
 
 .arrow-up {
@@ -388,7 +387,6 @@ body {
 
 .hi-container-wrapper {
   height: 100vh;
-  width: 60vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -482,6 +480,102 @@ body {
   height: var(--hi-6-height);
 }
 
+@media (max-width: 480px) {
+  .hi-container {
+    position: relative;
+    animation: none;
+  }
+  .hi-0 {
+    width: calc(var(--hi-0-width) * 0.6);
+    height: calc(var(--hi-0-height) * 0.6);
+    top: 18px;
+    left: 231px;
+  }
+  .hi-1 {
+    width: calc(var(--hi-1-width) * 0.6);
+    height: calc(var(--hi-1-height) * 0.6);
+    top: 96px;
+    left: 294px;
+  }
+  .hi-2 {
+    width: calc(var(--hi-2-width) * 0.6);
+    height: calc(var(--hi-2-height) * 0.6);
+    top: 42px;
+    left: 186px;
+  }
+  .hi-3 {
+    width: calc(var(--hi-3-width) * 0.6);
+    height: calc(var(--hi-3-height) * 0.6);
+    top: 42px;
+    left: 186px;
+  }
+  .hi-4 {
+    width: calc(var(--hi-4-width) * 0.6);
+    height: calc(var(--hi-4-height) * 0.6);
+    top: 30px;
+    left: -24px;
+  }
+  .hi-5 {
+    width: calc(var(--hi-5-width) * 0.6);
+    height: calc(var(--hi-5-height) * 0.6);
+    top: 207.6px;
+    left: 113.4px;
+  }
+  .hi-6 {
+    width: calc(var(--hi-6-width) * 0.6);
+    height: calc(var(--hi-6-height) * 0.6);
+    top: 103.2px;
+    left: 70.2px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .hi-container {
+    position: relative;
+    animation: none;
+  }
+  .hi-0 {
+    width: calc(var(--hi-0-width) * 0.6);
+    height: calc(var(--hi-0-height) * 0.6);
+    top: 18px;
+    left: 231px;
+  }
+  .hi-1 {
+    width: calc(var(--hi-1-width) * 0.6);
+    height: calc(var(--hi-1-height) * 0.6);
+    top: 96px;
+    left: 294px;
+  }
+  .hi-2 {
+    width: calc(var(--hi-2-width) * 0.6);
+    height: calc(var(--hi-2-height) * 0.6);
+    top: 42px;
+    left: 186px;
+  }
+  .hi-3 {
+    width: calc(var(--hi-3-width) * 0.6);
+    height: calc(var(--hi-3-height) * 0.6);
+    top: 42px;
+    left: 186px;
+  }
+  .hi-4 {
+    width: calc(var(--hi-4-width) * 0.6);
+    height: calc(var(--hi-4-height) * 0.6);
+    top: 30px;
+    left: -24px;
+  }
+  .hi-5 {
+    width: calc(var(--hi-5-width) * 0.6);
+    height: calc(var(--hi-5-height) * 0.6);
+    top: 207.6px;
+    left: 113.4px;
+  }
+  .hi-6 {
+    width: calc(var(--hi-6-width) * 0.6);
+    height: calc(var(--hi-6-height) * 0.6);
+    top: 103.2px;
+    left: 70.2px;
+  }
+}
 .header-icon {
   color: var(--white);
 }
@@ -515,6 +609,11 @@ h2 {
   height: 100vh;
 }
 
+@media (max-width: 480px) {
+  .hide-mobile {
+    display: none;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
@@ -524,10 +623,10 @@ header {
   position: fixed;
   z-index: 9999;
   width: 100vw;
+  height: 50px;
 }
 
 .brand-and-toggler {
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -555,35 +654,22 @@ header {
   color: var(--white);
 }
 
+#theme-toggle-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mode-text {
+  padding-left: 4px;
+}
+
 @media (max-width: 480px) {
   .navbar-brand {
-    font-size: var(--fs-18);
+    font-size: var(--fs-20);
   }
-  .hide-mobile {
-    display: none;
-  }
-  .header-buttons {
-    display: flex;
-    width: 100vw;
-    height: 50px;
-    justify-content: center;
-  }
-  .header-icon {
-    padding: 10px;
-    margin: 0;
-    font-size: 1.5rem;
-  }
-  .bi-envelope-fill {
-    border-right: none;
-  }
-  .navbar-toggler {
-    position: absolute;
-    right: 0;
-  }
-  #theme-toggle-button {
-    position: absolute;
-    left: 0;
-    padding: 20px;
+  .header-button-container {
+    width: 40vw;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
@@ -600,8 +686,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 1200px;
-  height: 100vh;
 }
 
 .right-hero {
@@ -697,6 +781,13 @@ header {
   z-index: -2;
 }
 
+@media (max-width: 480px) {
+  .hero-wrapper {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column-reverse;
+  }
+}
 .nav-item {
   padding-bottom: 30px;
   font-family: "Oswald", sans-serif;
@@ -712,7 +803,6 @@ header {
 .nav {
   opacity: 0;
   visibility: hidden;
-  position: absolute;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   height: 100vh;
   width: 100vw;
