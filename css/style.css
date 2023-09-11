@@ -483,6 +483,8 @@ body {
 @media (max-width: 480px) {
   .hi-container {
     position: relative;
+    min-width: 300px;
+    min-height: 300px;
     animation: none;
   }
   .hi-0 {
@@ -613,6 +615,9 @@ h2 {
   .hide-mobile {
     display: none;
   }
+  .wrapper {
+    width: 90vw;
+  }
 }
 footer {
   display: flex;
@@ -681,6 +686,9 @@ header {
   .navbar-brand {
     font-size: var(--fs-24);
   }
+  .navbar-toggler {
+    margin-right: 20px;
+  }
 }
 .hero-wrapper {
   display: flex;
@@ -734,7 +742,7 @@ header {
   border-top: solid 2px;
   margin-top: 20px;
   padding-top: 20px;
-  width: var(--hero-width);
+  width: auto;
   font-weight: 400;
   text-align: justify;
 }
@@ -783,9 +791,37 @@ header {
 
 @media (max-width: 480px) {
   .hero-wrapper {
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+  .right-hero {
+    width: 90vw;
+  }
+  #left-hero {
+    width: 90vw;
+  }
+  .hero-text-container {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .hero-text-container h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: var(--fs-72);
+    text-transform: uppercase;
+    letter-spacing: -4px;
+    line-height: 1;
+    font-weight: 300;
+  }
+  .hero-text-container p {
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: justify;
   }
 }
 .nav-item {
@@ -804,7 +840,7 @@ header {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  height: 100vh;
+  height: calc(100vh - 50px);
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -823,6 +859,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .nav-link {
+    font-size: var(--fs-48);
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {

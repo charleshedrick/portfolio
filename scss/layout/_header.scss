@@ -64,6 +64,8 @@ header {
 @media (min-width: $tablet-breakpoint) {
   .navbar-brand {
     font-size: var(--fs-24);
-    //font-weight: 800;
+  }
+  .navbar-toggler {
+    margin-right: 20px;
   }
 }

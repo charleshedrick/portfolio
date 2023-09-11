@@ -56,7 +56,7 @@
     border-top: solid 2px;
     margin-top: 20px;
     padding-top: 20px;
-    width: var(--hero-width);
+    width: auto;
     font-weight: 400;
     text-align: justify;
   }
@@ -110,9 +110,42 @@
 @media (max-width: $mobile-breakpoint) {
   .hero-wrapper {
     //min-width: 600px;
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+  // "hi!" TEXT SECTION //
+  .right-hero {
+    width: 90vw;
+  }
+
+  // HERO TEXT SECTION //
+  #left-hero {
+    width: 90vw;
+  }
+
+  .hero-text-container {
+    height: fit-content;
+    width: 80vw;
+    //color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+
+    h1 {
+      font-family: "Oswald", sans-serif;
+      font-size: var(--fs-72);
+      text-transform: uppercase;
+      letter-spacing: -4px;
+      line-height: 1;
+      font-weight: 300;
+    }
+
+    p {
+      width: fit-content;
+      text-align: justify;
+    }
   }
 }
 
