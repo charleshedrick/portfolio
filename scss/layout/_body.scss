@@ -5,11 +5,9 @@ body {
 }
 
 body {
-  font-weight: 500;
   line-height: 1.56;
   background-color: var(--white);
   color: var(--black);
-  min-width: 600px;
 }
 
 body.dark-theme {
@@ -25,7 +23,10 @@ h2 {
 }
 
 .wrapper {
-  height: fit-content;
+  height: 100vh;
+}
+p {
+  font-weight: 500;
 }
 
 // MOBILE
@@ -35,6 +36,7 @@ h2 {
   }
   .wrapper {
     width: 100vw;
+    height: fit-content;
   }
   p {
     font-size: var(--fs-14);

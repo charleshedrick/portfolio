@@ -1,0 +1,22 @@
+.right-column {
+  border: 2px solid;
+  border-radius: 10px;
+  //padding: 10px;
+
+  h3 {
+    border: solid;
+    border-width: 2px 0;
+    padding: 10px;
+    background-color: var(--color-light-blue);
+  }
+
+  h3:first-child {
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    border: solid;
+    border-width: 0 0 2px 0;
+  }
+  p {
+    padding: 15px;
+  }
+}

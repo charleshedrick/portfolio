@@ -1,0 +1,39 @@
+.projects-wrapper {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project {
+  height: 300px;
+  width: 200px;
+  border: 1px solid var(--color-medium-blue);
+  border-radius: 15px;
+  background-color: var(--color-yellow);
+  transition: scale 0.3s ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    scale: (105%);
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .projects-wrapper {
+    flex-direction: column;
+  }
+
+  .project {
+    height: 150px;
+    width: 100%;
+    border: 1px solid var(--color-medium-blue);
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+}

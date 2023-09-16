@@ -1,0 +1,14 @@
+.process-text-container {
+  p {
+    column-count: 2;
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .process-text-container {
+    p {
+      column-count: 1;
+    }
+  }
+}

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header class="header">
       <div class="brand-and-toggler">
         <a href="#section1" class="navbar-brand click-transition">
@@ -43,23 +43,15 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#section3" class="nav-link toggle click-transition"
-              >Skills</a
-            >
-          </li>
-          <li class="nav-item">
             <a href="#section4" class="nav-link toggle click-transition"
               >Portfolio</a
             >
           </li>
           <li class="nav-item">
             <a href="#section5" class="nav-link toggle click-transition"
-              >Work Process</a
+              >Process</a
             >
           </li>
-          <!-- <li class="nav-item">
-              <a href="#testimonials" class="nav-link toggle">Testimonials</a>
-            </li> -->
           <li class="nav-item">
             <a href="#section7" class="nav-link toggle click-transition"
               >Contact</a
@@ -78,237 +70,296 @@
         <i class="bi bi-arrow-down-circle-fill arrow-down grow-hover"></i>
       </button>
 
-      <!-- Hero Section -->
-      <section id="section1" class="wrapper hero-wrapper section">
-        <div id="left-hero">
-          <div class="hero-text-container">
-            <div class="hero-portrait-border">
+      <!-- Hero -->
+      <div id="section1" class="section-container">
+        <section class="wrapper hero-wrapper section">
+          <div id="left-hero">
+            <div class="hero-text-container">
+              <div class="hero-portrait-border">
+                <img
+                  class="hero-portrait"
+                  src="images/hero_portrait.png"
+                  alt="portrait"
+                />
+              </div>
+              <h2 class="creative-text">creative</h2>
+              <div class="hero-ampersand-wrapper">
+                <h1>Designer</h1>
+                <h2 id="ampersand">&</h2>
+              </div>
+              <h1>Developer</h1>
+              <p>
+                Hello! I'm a Jacksonville-based Frontend Web Developer and
+                Designer on a mission to bring the best of both worlds to the
+                digital realm. With over a decade of design and fine art
+                experience under my belt, I blend creativity and technical
+                prowess to craft visually stunning and user-friendly websites.
+                With two years of web development experience, I'm constantly
+                learning new technologies and pushing the boundaries of my
+                skills. Beyond the screen, you'll find me indulging in my love
+                for art and soaking up the beauty of nature on a local trail.
+                I'm passionate about good design and creating memorable user
+                experiences that leave a lasting impression.
+              </p>
+            </div>
+          </div>
+          <div class="right-hero">
+            <div class="color-palette-wrapper">
+              <div class="circle-container">
+                <div class="circle circle-1">
+                  <p class="circle-text">#e96f51</p>
+                </div>
+              </div>
+              <div class="circle-container">
+                <div class="circle circle-2">
+                  <p class="circle-text">#f8d586</p>
+                </div>
+              </div>
+              <div class="circle-container">
+                <div class="circle circle-3">
+                  <p class="circle-text">#a7d8ba</p>
+                </div>
+              </div>
+              <div class="circle-container">
+                <div class="circle circle-4">
+                  <p class="circle-text">#86c0d1</p>
+                </div>
+              </div>
+              <div class="circle-container">
+                <div class="circle circle-5">
+                  <p class="circle-text">#34h298</p>
+                </div>
+              </div>
+            </div>
+            <div class="hi-container">
               <img
-                class="hero-portrait"
-                src="images/hero_portrait.png"
-                alt="portrait"
+                src="images/hi/3D_text_hi_0.png"
+                class="hi-0"
+                alt="3D text component"
+                id="hi-0"
+              />
+              <img
+                src="images/hi/3D_text_hi_1.png"
+                class="hi-1"
+                alt="3D text component"
+                id="hi-1"
+              />
+              <img
+                src="images/hi/3D_text_hi_2.png"
+                class="hi-2"
+                alt="3D text component"
+                id="hi-2"
+              />
+              <img
+                src="images/hi/3D_text_hi_3.png"
+                class="hi-3"
+                alt="3D text component"
+                id="hi-3"
+              />
+              <img
+                src="images/hi/3D_text_hi_4.png"
+                class="hi-4"
+                alt="3D text component"
+                id="hi-4"
+              />
+              <img
+                src="images/hi/3D_text_hi_5.png"
+                class="hi-5"
+                alt="3D text component"
+                id="hi-5"
+              />
+              <img
+                src="images/hi/3D_text_hi_6.png"
+                class="hi-6"
+                alt="3D text component"
+                id="hi-6"
               />
             </div>
-            <h2 class="creative-text">creative</h2>
-            <div class="hero-ampersand-wrapper">
-              <h1>Designer</h1>
-              <h2 id="ampersand">&</h2>
+
+            <img
+              src="images/dot_matrix.png"
+              class="dot-grid"
+              alt="background dot grid"
+            />
+          </div>
+        </section>
+      </div>
+
+      <!-- Skills -->
+      <div id="section3" class="section-container">
+        <section class="wrapper section" id="skills">
+          <img
+            src="images/3D_text_skills.png"
+            class="hero-3Dtext-skills section-image-narrow"
+            alt="3D text skills"
+            loading="lazy"
+          />
+          <div class="section-text-container">
+            <div class="two-column-container">
+              <div class="left-column">
+                <h1>Skills</h1>
+                <p>
+                  With a strong foundation in visual art and design, I bring a
+                  unique blend of creativity and technical expertise to the
+                  world of web development. My journey into the digital realm
+                  has been marked by a continuous drive to expand my skill set
+                  and deliver captivating online experiences.
+                </p>
+              </div>
+              <div class="right-column">
+                <h3>Visual Art & Design</h3>
+                <p>
+                  My background in visual art and design has instilled in me a
+                  keen eye for aesthetics, composition, and user-centered design
+                  principles. I approach web development with a deep
+                  appreciation for the marriage of form and function, crafting
+                  websites that not only function seamlessly but also delight
+                  the eyes.
+                </p>
+                <h3>Web Development</h3>
+                <p>
+                  My journey into web development has been an exciting one. I've
+                  dived headfirst into learning essential technologies such as
+                  vanilla JavaScript, Bootstrap, PHP, and responsive design.
+                  These skills empower me to create dynamic, interactive, and
+                  mobile-friendly websites that engage users across platforms.
+                </p>
+                <h3>Design Tools</h3>
+                <p>
+                  Proficient in design tools like Figma, Illustrator, Photoshop,
+                  Procreate and Blender, I am able to conceptualize, prototype,
+                  and refine user interfaces. My design skills ensure that every
+                  web project I undertake is visually appealing and
+                  user-friendly.
+                </p>
+                <h3>Continuous Learning</h3>
+                <p>
+                  I believe that learning is a lifelong journey. I am committed
+                  to staying at the forefront of web development by continually
+                  expanding my knowledge and exploring emerging technologies and
+                  languages. I am currently learning more PHP for a blog website
+                  with login capabilities.
+                </p>
+              </div>
             </div>
-            <h1>Developer</h1>
+          </div>
+        </section>
+      </div>
+
+      <!-- Portfolio -->
+      <div id="section4" class="section-container">
+        <section class="wrapper section" id="portfolio">
+          <img
+            src="images/3D_text_portfolio.png"
+            class="hero-3Dtext-portfolio section-image-wide"
+            alt="3D text portfolio"
+            loading="lazy"
+          />
+          <img
+            src="images/3D_text_portfolio_mobile.png"
+            class="hero-3Dtext-contact section-image-mobile"
+            alt="3D text contact"
+            loading="lazy"
+          />
+          <div class="section-text-container">
+            <h1>Portfolio</h1>
             <p>
-              Hello! I'm a Jacksonville-based Frontend Web Developer and
-              Designer on a mission to bring the best of both worlds to the
-              digital realm. With over a decade of design and fine art
-              experience under my belt, I blend creativity and technical prowess
-              to craft visually stunning and user-friendly websites. With two
-              years of web development experience, I'm constantly learning new
-              technologies and pushing the boundaries of my skills. Beyond the
-              screen, you'll find me indulging in my love for art and soaking up
-              the beauty of nature on a local trail. I'm passionate about good
-              design and creating memorable user experiences that leave a
-              lasting impression.
+              My portfolio showcases the fusion of my visual artistry and web
+              development prowess, resulting in unique, responsive, and visually
+              stunning web experiences. I'm excited to bring my skills and
+              passion to your next project.
+            </p>
+            <div class="projects-wrapper">
+              <div class="project">
+                <h3>Weather App</h3>
+              </div>
+              <div class="project">
+                <h3>Blog</h3>
+              </div>
+              <div class="project">
+                <h3>Bakery Website</h3>
+              </div>
+              <div class="project">
+                <h3>Misc.</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Process -->
+      <div id="section5" class="section-container">
+        <section class="wrapper section" id="process">
+          <img
+            src="images/3D_text_process.png"
+            class="hero-3Dtext-process section-image-wide"
+            alt="3D text process"
+          />
+          <img
+            src="images/3D_text_process_mobile.png"
+            class="hero-3Dtext-process section-image-mobile"
+            alt="3D text process"
+            loading="lazy"
+          />
+          <div class="section-text-container process-text-container">
+            <h1>Process</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+              accusantium modi illo voluptate rem impedit non, sit obcaecati
+              porro sapiente? Soluta rem ab tenetur. Magnam libero beatae nam
+              maiores quam similique? Perferendis incidunt amet praesentium
+              iure. Asperiores perferendis alias quae autem distinctio, sit
+              optio veritatis maiores, molestias inventore aliquid quo est. Nam
+              minus dolore itaque, accusantium iure nobis eveniet tempora,
+              explicabo quae sapiente ratione, dolorum unde error. Sint error
+              eligendi itaque nulla perspiciatis, dolore neque dicta autem.
+              Neque, velit illo! Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Eveniet tempore sapiente earum veniam veritatis.
+              Odio illo, maxime earum, molestias maiores consequuntur non
+              aliquid neque modi suscipit amet ullam quidem pariatur doloribus
+              accusamus minus eveniet ipsam beatae doloremque voluptates eos.
+              Corrupti aliquid, hic ducimus quo aut eligendi sunt earum
+              quisquam. Delectus temporibus voluptatem pariatur non aspernatur
+              vitae adipisci vero dolor ullam.
             </p>
           </div>
-        </div>
-        <div class="right-hero">
-          <div class="color-palette-wrapper">
-            <div class="circle-container">
-              <div class="circle circle-1">
-                <p class="circle-text">#e96f51</p>
-              </div>
-            </div>
-            <div class="circle-container">
-              <div class="circle circle-2">
-                <p class="circle-text">#f8d586</p>
-              </div>
-            </div>
-            <div class="circle-container">
-              <div class="circle circle-3">
-                <p class="circle-text">#a7d8ba</p>
-              </div>
-            </div>
-            <div class="circle-container">
-              <div class="circle circle-4">
-                <p class="circle-text">#86c0d1</p>
-              </div>
-            </div>
-            <div class="circle-container">
-              <div class="circle circle-5">
-                <p class="circle-text">#34h298</p>
-              </div>
-            </div>
-          </div>
-          <div class="hi-container">
-            <img
-              src="images/hi/3D_text_hi_0.png"
-              class="hi-0"
-              alt="3D text component"
-              id="hi-0"
-            />
-            <img
-              src="images/hi/3D_text_hi_1.png"
-              class="hi-1"
-              alt="3D text component"
-              id="hi-1"
-            />
-            <img
-              src="images/hi/3D_text_hi_2.png"
-              class="hi-2"
-              alt="3D text component"
-              id="hi-2"
-            />
-            <img
-              src="images/hi/3D_text_hi_3.png"
-              class="hi-3"
-              alt="3D text component"
-              id="hi-3"
-            />
-            <img
-              src="images/hi/3D_text_hi_4.png"
-              class="hi-4"
-              alt="3D text component"
-              id="hi-4"
-            />
-            <img
-              src="images/hi/3D_text_hi_5.png"
-              class="hi-5"
-              alt="3D text component"
-              id="hi-5"
-            />
-            <img
-              src="images/hi/3D_text_hi_6.png"
-              class="hi-6"
-              alt="3D text component"
-              id="hi-6"
-            />
-          </div>
+        </section>
+      </div>
 
+      <!-- Contact -->
+      <div id="section7" class="section-container">
+        <section class="wrapper section" id="contact">
           <img
-            src="images/dot_matrix.png"
-            class="dot-grid"
-            alt="background dot grid"
+            src="images/3D_text_contact.png"
+            class="hero-3Dtext-contact section-image-wide"
+            alt="3D text contact"
+            loading="lazy"
           />
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section id="section2" class="wrapper section about-section">
-        <div class="section-text-container">
-          <h1>About Me</h1>
-          <p>
-            Passionate Web Developer: With two years of web development
-            experience, I've infused my artistic background into crafting
-            captivating online experiences. Proficient in HTML, CSS, JavaScript,
-            PHP, and MySQL, I specialize in crafting visually engaging
-            anduser-centered websites that leverage over ten years of fine art
-            experience.
-          </p>
-        </div>
-        <img
-          src="images/3D_text_about.png"
-          class="hero-3Dtext-about section-image-narrow"
-          alt="3D text About"
-        />
-      </section>
-
-      <!-- Skills Section -->
-      <section id="section3" class="wrapper section" id="skills">
-        <div class="section-text-container">
-          <h1>Skills</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            laudantium quidem repellendus nisi soluta quam. Nihil excepturi
-            ipsam deserunt accusantium dolore, pariatur a natus impedit,
-            provident veritatis, corrupti sit tempora iste placeat consequatur.
-            Aut dolorem ea commodi facere illo repellendus excepturi? Labore
-            quas exercitationem incidunt. Quaerat illum nam incidunt eaque?
-          </p>
-          <ul>
-            <li>HTML5, CSS3, JavaScript</li>
-            <li>React, Angular, Vue.js</li>
-            <li>Responsive Design</li>
-            <!-- Add more skills -->
-          </ul>
-        </div>
-        <img
-          src="images/3D_text_skills.png"
-          class="hero-3Dtext-skills section-image-narrow"
-          alt="3D text skills"
-        />
-      </section>
-
-      <!-- Portfolio Section -->
-      <section id="section4" class="wrapper section" id="portfolio">
-        <div class="section-text-container">
-          <h1>Portfolio</h1>
-          <p></p>
-        </div>
-        <!-- Showcase your projects with images, descriptions, and links -->
-        <img
-          src="images/3D_text_portfolio.png"
-          class="hero-3Dtext-portfolio section-image-wide"
-          alt="3D text portfolio"
-        />
-      </section>
-
-      <!-- Work Process Section -->
-      <section id="section5" class="wrapper section" id="process">
-        <div class="section-text-container">
-          <h1>Process</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-            accusantium modi illo voluptate rem impedit non, sit obcaecati porro
-            sapiente? Soluta rem ab tenetur. Magnam libero beatae nam maiores
-            quam similique? Perferendis incidunt amet praesentium iure.
-            Asperiores perferendis alias quae autem distinctio, sit optio
-            veritatis maiores, molestias inventore aliquid quo est. Nam minus
-            dolore itaque, accusantium iure nobis eveniet tempora, explicabo
-            quae sapiente ratione, dolorum unde error. Sint error eligendi
-            itaque nulla perspiciatis, dolore neque dicta autem. Neque, velit
-            illo!
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
-            tempore sapiente earum veniam veritatis. Odio illo, maxime earum,
-            molestias maiores consequuntur non aliquid neque modi suscipit amet
-            ullam quidem pariatur doloribus accusamus minus eveniet ipsam beatae
-            doloremque voluptates eos. Corrupti aliquid, hic ducimus quo aut
-            eligendi sunt earum quisquam. Delectus temporibus voluptatem
-            pariatur non aspernatur vitae adipisci vero dolor ullam.
-          </p>
-        </div>
-        <img
-          src="images/3D_text_process.png"
-          class="hero-3Dtext-process section-image-wide"
-          alt="3D text process"
-        />
-        <img
-          src="images/3D_text_process_mobile.png"
-          class="hero-3Dtext-process section-image-mobile"
-          alt="3D text process"
-        />
-      </section>
-
-      <!-- Contact Section -->
-      <section id="section7" class="wrapper section" id="contact">
-        <div class="section-text-container">
-          <h1>Contact</h1>
-          <p>Get in touch with me: hedrickcharles@gmail.com</p>
-        </div>
-      </section>
-      <img
-        src="images/3D_text_contact.png"
-        class="hero-3Dtext-contact section-image-wide"
-        alt="3D text contact"
-      />
-      <img
-        src="images/3D_text_contact_mobile.png"
-        class="hero-3Dtext-contact section-image-mobile"
-        alt="3D text contact"
-      />
+          <img
+            src="images/3D_text_contact_mobile.png"
+            class="hero-3Dtext-contact section-image-mobile"
+            alt="3D text contact"
+            loading="lazy"
+          />
+          <div class="section-text-container contact-text-container">
+            <h1>Contact</h1>
+            <p>Get in touch with me: hedrickcharles@gmail.com</p>
+            <button
+              type="button"
+              class="navbar-toggler toggle click-transition"
+              id="navbar-toggler"
+            >
+              <i class="bi bi-list toggler-icon"></i>
+            </button>
+            <button type="button" class="bootstrap-icons">
+              <i class="bi bi-linkedin"></i>
+            </button>
+          </div>
+        </section>
+      </div>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
       <p>&copy; 2023 Charles Hedrick. All rights reserved.</p>
     </footer>
