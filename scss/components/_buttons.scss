@@ -50,6 +50,7 @@
 // CIRCLES //
 .color-palette-wrapper {
   display: flex;
+  z-index: 99;
 }
 
 .circle-container {
@@ -57,7 +58,7 @@
   align-items: center;
   border-radius: 20px;
   //outline: solid 4px var(--color-medium-blue);
-  cursor: pointer;
+  cursor: crosshair;
   display: flex;
   height: 40px;
   justify-content: center;

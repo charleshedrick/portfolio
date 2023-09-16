@@ -45,13 +45,15 @@
   --fs-72: 4.5rem;
   --fs-88: 5.5rem;
   --fs-96: 6rem;
+  --fs-120: 7.5rem;
 
   --container: 69.375rem; // 1110px
-  --hero-width: 358px; // width of 'developer' text
+  --hero-width-dekstop: 358px; // width of 'developer' text
+  --hero-width-tablet: 325px; // width of 'developer' text
 
   --transition: 0.3s ease-in-out; //hover over transition
 }
 
 $mobile-breakpoint: 480px;
-$tablet-breakpoint: 768px;
+$tablet-breakpoint: 1024px;
 $desktop-breakpoint: 1024px;

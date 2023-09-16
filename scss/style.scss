@@ -4,13 +4,19 @@
 @import "components/_buttons";
 @import "components/_hi_animation";
 @import "components/_icons";
+@import "components/_sections";
 
-@import "layout/_about";
 @import "layout/_body";
 @import "layout/_footer";
 @import "layout/_header";
-@import "layout/_hero";
 @import "layout/_nav";
+
+@import "pages/_about";
+@import "pages/_contact";
+@import "pages/_hero";
+@import "pages/_portfolio";
+@import "pages/_process";
+@import "pages/_skills";
 
 @import "utilities/_mixins";
 @import "utilities/_variables";

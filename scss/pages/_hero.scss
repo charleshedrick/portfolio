@@ -1,9 +1,8 @@
-.hero-wrapper {
+#section1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  //max-width: 1250px;
-  //height: 100vh;
+  flex-direction: row;
 }
 
 // "hi!" TEXT SECTION //
@@ -26,24 +25,25 @@
   flex-direction: column;
   width: 40vw;
   height: 100vh;
+  z-index: 1;
 }
 
 .hero-text-container {
   height: fit-content;
-  width: var(--hero-width);
-  //color: var(--white);
+  width: fit-content;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
 
   h1 {
     font-family: "Oswald", sans-serif;
-    font-size: var(--fs-96);
+    font-size: var(--fs-120);
     text-transform: uppercase;
     letter-spacing: -4px;
     line-height: 1;
     font-weight: 300;
+    text-align: left;
   }
 
   h2 {
@@ -52,11 +52,15 @@
     line-height: 1;
   }
 
+  .creative-text {
+    width: 100%;
+  }
+
   p {
     border-top: solid 2px;
     margin-top: 20px;
     padding-top: 20px;
-    width: auto;
+    width: 456px;
     font-weight: 400;
     text-align: justify;
   }
@@ -64,8 +68,9 @@
 
 .hero-ampersand-wrapper {
   display: flex;
+  width: 100%;
   align-items: baseline;
-  justify-content: center;
+  justify-content: left;
 }
 
 #ampersand {
@@ -108,6 +113,10 @@
 
 // MOBILE
 @media (max-width: $mobile-breakpoint) {
+  #section1 {
+    flex-direction: column;
+  }
+
   .hero-wrapper {
     //min-width: 600px;
     height: fit-content;
@@ -118,10 +127,6 @@
   .hero-portrait-border {
     margin-top: 10vh;
   }
-  // "hi!" TEXT SECTION //
-  .right-hero {
-    width: 90vw;
-  }
 
   // HERO TEXT SECTION //
   #left-hero {
@@ -131,12 +136,12 @@
 
   .hero-text-container {
     height: fit-content;
-    width: 80vw;
+    width: 325px;
 
     h1 {
       font-size: var(--fs-72);
       //letter-spacing: -4px;
-      font-weight: 400;
+      //font-weight: 400;
     }
 
     p {
@@ -145,10 +150,49 @@
       margin-bottom: 30px;
     }
   }
+
+  .color-palette-wrapper {
+    display: none;
+  }
+
+  .dot-grid {
+    display: none;
+  }
 }
 
 // TABLET
 @media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+  .left-hero {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-text-container {
+    height: fit-content;
+
+    h1 {
+      font-size: var(--fs-88);
+      //font-weight: 400;
+    }
+
+    p {
+      //width: fit-content;
+      font-weight: 500;
+      font-size: var(--fs-14);
+      margin-bottom: 30px;
+      width: 325px;
+    }
+  }
+  .creative-text {
+    width: 325px;
+  }
+  .dot-grid {
+    height: 600px;
+  }
+  .hero-portrait-border {
+    margin-top: 4vh;
+  }
 }
 
 // DESKTOP
