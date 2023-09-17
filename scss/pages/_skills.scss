@@ -32,10 +32,10 @@
   justify-content: space-around;
   margin-top: 60px;
   flex-wrap: wrap;
-  width: 70%;
+  width: 100%;
   height: fit-content;
   z-index: 99;
-  //border: 1px solid red;
+  color: var(--black);
 }
 
 .keyword-container {
@@ -48,23 +48,12 @@
   height: 40px;
   justify-content: center;
   overflow: hidden;
-  //position: relative;
-  //transition: width 0.3s ease-in-out, background-color 0.3s ease;
   width: fit-content;
-  //background-color: var(--color-yellow);
-
-  //   &:not(:last-child) {
-  //     margin-right: 3px;
-  //   }
-
-  //   &:hover {
-  //     width: 95px;
-  //     background-color: var(--container-white);
-  //   }
+  background-color: var(--color-cream);
 }
 .keyword-text {
   opacity: 1;
-  padding: 7px;
+  padding: 7px 12px;
   text-align: center;
   font-weight: 700;
 }
@@ -73,4 +62,8 @@
   .skills-keyword-wrapper {
     margin: 40px 0;
   }
+}
+
+// TABLET
+@media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
 }

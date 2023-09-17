@@ -8,7 +8,6 @@ body {
   background-color: var(--white);
   color: var(--black);
   width: 100vw; /* Apply 100vw to the body element only */
-  border: 1px dotted red;
 }
 
 body.dark-theme {
@@ -17,9 +16,6 @@ body.dark-theme {
   background-color: var(--black);
   color: var(--white);
 }
-main {
-  border: 1px dotted rgb(30, 255, 0);
-}
 
 h2 {
   font-size: var(--fs-24);
@@ -27,12 +23,13 @@ h2 {
 }
 
 .wrapper {
-  height: 100vh;
-  border: 1px dotted rgb(0, 102, 255);
+  height: 100%;
 }
 
 p {
   font-weight: 500;
+  line-height: 1.4;
+  font-size: var(--fs-14);
 }
 
 // MOBILE
@@ -41,7 +38,7 @@ p {
     display: none;
   }
   .wrapper {
-    width: 100vw;
+    width: 100%;
     height: fit-content;
   }
   p {
