@@ -1,10 +1,9 @@
 .right-column {
   border: solid 2px;
-  //border-width: 2px 2px 3px 3px;
   border-radius: 10px;
-  //padding: 10px;
   overflow: hidden;
   color: var(--black);
+  max-width: 100%;
 
   h3 {
     border: solid;

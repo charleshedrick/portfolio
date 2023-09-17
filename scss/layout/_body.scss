@@ -1,5 +1,4 @@
-html,
-body {
+html {
   scroll-behavior: smooth;
   transition-duration: 0.5s;
 }
@@ -8,6 +7,8 @@ body {
   line-height: 1.56;
   background-color: var(--white);
   color: var(--black);
+  width: 100vw; /* Apply 100vw to the body element only */
+  border: 1px dotted red;
 }
 
 body.dark-theme {
@@ -15,6 +16,9 @@ body.dark-theme {
   line-height: 1.56;
   background-color: var(--black);
   color: var(--white);
+}
+main {
+  border: 1px dotted rgb(30, 255, 0);
 }
 
 h2 {
@@ -24,7 +28,9 @@ h2 {
 
 .wrapper {
   height: 100vh;
+  border: 1px dotted rgb(0, 102, 255);
 }
+
 p {
   font-weight: 500;
 }

@@ -13,7 +13,8 @@
 .nav {
   opacity: 0;
   visibility: hidden;
-  position: absolute;
+  position: fixed;
+  left: 0;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   height: 100vh;
   width: 100vw;
@@ -22,6 +23,7 @@
   text-align: center;
   justify-content: center;
   background-color: var(--tertiary-color); //light/dark theme here
+  z-index: 9999;
 }
 
 .nav.show {

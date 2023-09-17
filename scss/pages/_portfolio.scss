@@ -1,39 +1,80 @@
+.portfolio-section-text-wrapper {
+  height: 85%;
+}
+
 .projects-wrapper {
   margin-top: 30px;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  :not(:last-child) {
+    margin-right: 15px;
+  }
 }
 
 .project {
-  height: 300px;
-  width: 200px;
-  border: 1px solid;
-  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  border: 2px solid;
+  border-radius: 10px;
   background-color: var(--color-cream);
-  transition: scale 0.3s ease-in-out;
+  //margin: 10px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
+  transition: width 0.3s ease-in-out;
   &:hover {
-    scale: (105%);
+    width: 300%;
   }
 }
 
+//mobile//
 @media (max-width: $mobile-breakpoint) {
   .projects-wrapper {
     flex-direction: column;
-  }
 
+    :not(:last-child) {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  }
   .project {
-    height: 150px;
+    height: 100px;
     width: 100%;
     border: 1px solid var(--color-medium-blue);
     border-radius: 15px;
-    margin-bottom: 15px;
+    transition: height 0.3s ease-in-out;
+
+    &:hover {
+      height: 200%;
+      width: 100%;
+    }
+  }
+}
+
+// TABLET
+@media (min-width: $mobile-breakpoint) and (max-width: $tablet-breakpoint) {
+  .projects-wrapper {
+    flex-direction: column;
+    transition: height 0.3s ease-in-out;
+
+    :not(:last-child) {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  }
+  .project {
+    transition: height 0.3s ease-in-out;
+
+    &:hover {
+      height: 800%;
+      width: 100%;
+    }
   }
 }

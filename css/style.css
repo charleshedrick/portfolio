@@ -709,8 +709,7 @@ body {
     min-width: 500px;
   }
 }
-html,
-body {
+html {
   scroll-behavior: smooth;
   transition-duration: 0.5s;
 }
@@ -719,6 +718,8 @@ body {
   line-height: 1.56;
   background-color: var(--white);
   color: var(--black);
+  width: 100vw; /* Apply 100vw to the body element only */
+  border: 1px dotted red;
 }
 
 body.dark-theme {
@@ -728,6 +729,10 @@ body.dark-theme {
   color: var(--white);
 }
 
+main {
+  border: 1px dotted rgb(30, 255, 0);
+}
+
 h2 {
   font-size: var(--fs-24);
   text-decoration-style: wavy;
@@ -735,6 +740,7 @@ h2 {
 
 .wrapper {
   height: 100vh;
+  border: 1px dotted rgb(0, 102, 255);
 }
 
 p {
@@ -841,7 +847,8 @@ header {
 .nav {
   opacity: 0;
   visibility: hidden;
-  position: absolute;
+  position: fixed;
+  left: 0;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   height: 100vh;
   width: 100vw;
@@ -850,6 +857,7 @@ header {
   text-align: center;
   justify-content: center;
   background-color: var(--tertiary-color);
+  z-index: 9999;
 }
 
 .nav.show {
@@ -887,6 +895,10 @@ header {
   justify-content: center;
   align-items: center;
 }
+.contact-text-container h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .contact-text-container p {
   text-align: center;
 }
@@ -898,8 +910,21 @@ header {
   margin-bottom: 40px;
 }
 
-#section1 {
-  width: 100vw;
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 60px 0;
+  background-color: var(--color-cream);
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.form-input-wrapper {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hero-wrapper {
@@ -907,7 +932,6 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  width: 100vw;
 }
 
 .right-hero {
@@ -915,7 +939,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 497px;
+  max-width: 497px;
+  width: 100%;
   height: 100%;
 }
 
@@ -926,8 +951,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 100%;
   height: 100vh;
   z-index: 1;
   margin-right: 20px;
@@ -951,6 +975,7 @@ header {
   line-height: 1;
   font-weight: 300;
   text-align: left;
+  max-width: 100%;
 }
 .hero-text-container h2 {
   font-family: "Poiret One", cursive;
@@ -964,7 +989,7 @@ header {
   border-top: solid 2px;
   margin-top: 20px;
   padding-top: 20px;
-  width: 456px;
+  max-width: 456px;
   text-align: justify;
 }
 
@@ -1025,14 +1050,13 @@ header {
   .hero-wrapper {
     height: -moz-fit-content;
     height: fit-content;
-    width: 100vw;
     flex-direction: column;
   }
   .hero-portrait-border {
     margin-top: 10vh;
   }
   #left-hero {
-    width: 90vw;
+    max-width: 90vw;
     height: -moz-fit-content;
     height: fit-content;
     margin: 0;
@@ -1063,7 +1087,8 @@ header {
     align-items: center;
   }
   .right-hero {
-    width: 395px;
+    max-width: 395px;
+    width: 100%;
   }
   .hero-text-container {
     height: -moz-fit-content;
@@ -1090,40 +1115,73 @@ header {
     margin-top: 200px;
   }
 }
+.portfolio-section-text-wrapper {
+  height: 85%;
+}
+
 .projects-wrapper {
   margin-top: 30px;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+.projects-wrapper :not(:last-child) {
+  margin-right: 15px;
+}
 
 .project {
-  height: 300px;
-  width: 200px;
-  border: 1px solid;
-  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  border: 2px solid;
+  border-radius: 10px;
   background-color: var(--color-cream);
-  transition: scale 0.3s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: width 0.3s ease-in-out;
 }
 .project:hover {
-  scale: 105%;
+  width: 300%;
 }
 
 @media (max-width: 480px) {
   .projects-wrapper {
     flex-direction: column;
   }
+  .projects-wrapper :not(:last-child) {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
   .project {
-    height: 150px;
+    height: 100px;
     width: 100%;
     border: 1px solid var(--color-medium-blue);
     border-radius: 15px;
-    margin-bottom: 15px;
+    transition: height 0.3s ease-in-out;
+  }
+  .project:hover {
+    height: 200%;
+    width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width: 1024px) {
+  .projects-wrapper {
+    flex-direction: column;
+    transition: height 0.3s ease-in-out;
+  }
+  .projects-wrapper :not(:last-child) {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .project {
+    transition: height 0.3s ease-in-out;
+  }
+  .project:hover {
+    height: 800%;
+    width: 100%;
   }
 }
 .process-text-container p {
@@ -1144,6 +1202,7 @@ header {
   border-radius: 10px;
   overflow: hidden;
   color: var(--black);
+  max-width: 100%;
 }
 .right-column h3 {
   border: solid;

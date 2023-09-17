@@ -2,6 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  h1 {
+    width: fit-content;
+  }
   p {
     text-align: center;
   }
@@ -11,4 +14,21 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  //background-color: var(--color-cream);
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 60px 0;
+  background-color: var(--color-cream);
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  padding: 40px;
+}
+.form-input-wrapper {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
