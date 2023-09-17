@@ -8,7 +8,8 @@
   --color-red: #e96f51;
   --color-orange: #f5a361;
   --color-yellow: #f8d586;
-  --color-cream: #edeae0;
+  --color-cream: #e7e3d6;
+  --color-beige: #d7d2c3;
   --color-green: #a7d8ba;
   --color-light-blue: #86c0d1;
   --color-medium-blue: #25aae1;
@@ -16,7 +17,7 @@
   --color-purple: #c999b2;
   --black: hsl(280, 3%, 23%);
   --white: hsl(60, 17%, 83%);
-  --container-white: hsl(40, 11%, 95%);
+  --white-light: hsl(60, 18%, 87%);
   --button-color: var(--secondary-color);
   --button-active: hsl(21, 72%, 65%);
   --success-color: #6bd684;
@@ -329,14 +330,6 @@ body {
 .circle-container:hover {
   width: 95px;
   background-color: var(--container-white);
-}
-
-.circle-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .circle-text {
@@ -927,11 +920,16 @@ header {
   justify-content: space-between;
 }
 
+#section1 {
+  width: 100vw;
+}
+
 .hero-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  width: 100vw;
 }
 
 .right-hero {
@@ -1400,7 +1398,8 @@ header {
   --color-red: #e96f51;
   --color-orange: #f5a361;
   --color-yellow: #f8d586;
-  --color-cream: #edeae0;
+  --color-cream: #e7e3d6;
+  --color-beige: #d7d2c3;
   --color-green: #a7d8ba;
   --color-light-blue: #86c0d1;
   --color-medium-blue: #25aae1;
@@ -1408,7 +1407,7 @@ header {
   --color-purple: #c999b2;
   --black: hsl(280, 3%, 23%);
   --white: hsl(60, 17%, 83%);
-  --container-white: hsl(40, 11%, 95%);
+  --white-light: hsl(60, 18%, 87%);
   --button-color: var(--secondary-color);
   --button-active: hsl(21, 72%, 65%);
   --success-color: #6bd684;
