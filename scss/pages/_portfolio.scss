@@ -10,9 +10,9 @@
 .project {
   height: 300px;
   width: 200px;
-  border: 1px solid var(--color-medium-blue);
+  border: 1px solid;
   border-radius: 15px;
-  background-color: var(--color-yellow);
+  background-color: var(--color-cream);
   transition: scale 0.3s ease-in-out;
 
   display: flex;

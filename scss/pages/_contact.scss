@@ -1,5 +1,14 @@
 .contact-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   p {
     text-align: center;
   }
+}
+.contact-icon-wrapper {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }

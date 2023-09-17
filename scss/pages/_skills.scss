@@ -1,22 +1,77 @@
 .right-column {
-  border: 2px solid;
+  border: solid 2px;
+  //border-width: 2px 2px 3px 3px;
   border-radius: 10px;
   //padding: 10px;
+  overflow: hidden;
+  color: var(--black);
 
   h3 {
     border: solid;
     border-width: 2px 0;
     padding: 10px;
-    background-color: var(--color-light-blue);
+    background-color: var(--color-beige);
+    letter-spacing: 4px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
   }
 
   h3:first-child {
-    border-radius: 10px 10px 0 0;
     padding: 10px;
     border: solid;
     border-width: 0 0 2px 0;
   }
   p {
     padding: 15px;
+    background-color: var(--color-cream);
+  }
+}
+
+// SKILLS KEYWORDS //
+.skills-keyword-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  width: 70%;
+  height: fit-content;
+  z-index: 99;
+  //border: 1px solid red;
+}
+
+.keyword-container {
+  align-items: center;
+  border-radius: 20px;
+  border: solid 2px;
+  cursor: crosshair;
+  display: flex;
+  margin: 5px;
+  height: 40px;
+  justify-content: center;
+  overflow: hidden;
+  //position: relative;
+  //transition: width 0.3s ease-in-out, background-color 0.3s ease;
+  width: fit-content;
+  //background-color: var(--color-yellow);
+
+  //   &:not(:last-child) {
+  //     margin-right: 3px;
+  //   }
+
+  //   &:hover {
+  //     width: 95px;
+  //     background-color: var(--container-white);
+  //   }
+}
+.keyword-text {
+  opacity: 1;
+  padding: 7px;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .skills-keyword-wrapper {
+    margin: 40px 0;
   }
 }
