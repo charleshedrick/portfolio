@@ -1,0 +1,28 @@
+[33mc882119[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m almost finished 'skills' section with taglines. Tweaked dynamic layout
+[33m01fb025[m progress on formatting and adding copy. Working on Skills section.
+[33md82d2d2[m added partials for pages to scss. modifications to responsive layout
+[33m791809a[m cleaned up the hero section for mobile, dot matrix needs work.
+[33m2f614d9[m fixed mobile width issue. it was the size of the 'hi!' image that needed to be reduced.
+[33mf2fd6fa[m having trouble with mobile layout in chrome browser. Need to check how it displays on mobile device.
+[33m685601c[m edited color palette circles with correct colors and hex
+[33mf6aaaad[m fixed bugs in the color circles, adjusted z-index for right hero
+[33mf37d65e[m fixed unused code in the html. fixed JS bugs with scroll buttons
+[33mf963746[m committing before making changes to JS. hero animations are good.
+[33md1b7d65[m fixed nav bug. modified hi! image with variable sizing, added universal active and hover button transitions
+[33mf28d06d[m split up 'hi' animation from hero scss partial, modified hero text and avatar to setup with Oswald font / formatting setup.
+[33md40fd06[m changes to hero page. edits with animations
+[33m130faf5[m site pre-big visual edits with new page images
+[33m88b7a6e[m big changes: animations, arrow up/down js functions, section smart scrolling
+[33m425cdee[m changed z index of _header
+[33mf607a75[m fixed header in mobile layout
+[33m63392d3[m changes to social links view in header
+[33m6b584f1[m test
+[33m1159fd8[m check check
+[33m71a3c5f[m added sun/moon icon for light/dark theme
+[33madddae1[m cleaned up code, style changes and light/dark edits
+[33ma8543b6[m resolved issues with repositories, git push --allow-unrelated-histories
+[33m4413d18[m Merge branch 'main' of github.com:charleshedrick/portfolio
+[33me414782[m major changes to code, added light/dark theme
+[33m45cc74b[m bad changes
+[33mfc45564[m Initial commit
+[33mb696608[m base repository files, some html and css for top of page

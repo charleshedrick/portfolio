@@ -221,3 +221,16 @@ startScrollAnimation(
   "slideOut 1s ease forwards",
   10
 );
+
+//portfolio click event//
+const children = document.querySelectorAll(".project");
+
+children.forEach((child) => {
+  child.addEventListener("click", () => {
+    // Remove "active" class from all children
+    children.forEach((c) => c.classList.remove("active"));
+
+    // Add "active" class to the clicked child
+    child.classList.add("active");
+  });
+});
