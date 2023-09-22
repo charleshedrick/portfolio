@@ -50,6 +50,11 @@
   overflow: hidden;
   width: fit-content;
   background-color: var(--color-green-transparent);
+
+  transform: background-color 0.1s ease-in-out;
+  &:hover {
+    background-color: var(--color-green);
+  }
 }
 .keyword-text {
   opacity: 1;
