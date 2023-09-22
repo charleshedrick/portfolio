@@ -1270,15 +1270,18 @@ header {
 
 @media (max-width: 480px) {
   .project {
-    height: 100px;
+    height: 200px;
     width: 100%;
     transition: height 0.6s ease-in-out;
+  }
+  .project h3 {
+    font-size: var(--fs-32);
   }
   .project p {
     width: 70vw;
   }
   .project:hover {
-    height: 700px;
+    height: 1900px;
   }
 }
 .process-text-container {
